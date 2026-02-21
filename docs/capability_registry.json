@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0",
+  "registryId": "agrobotgrid-urc-capability-registry",
+  "generatedAt": "2025-10-09T00:00:00Z",
+  "description": "approved capability registry mapping logical capabilities to hardware/sensor/actuator interfaces for cooking cells and growth modules.",
+  "discoveryEndpoint": "/api/capabilities", 
+  "capabilities": [
+    {
+      "id": "sensor.temp.surface_therm_1",
+      "category": "sensor",
+      "type": "temperature",
+      "description": "Surface thermocouple for pan/oven surface temperature",
+      "unit": "C",
+      "range": {"min": -40, "max": 800},
+      "precision": 0.5,
+      "sample_rate_hz": 2,
+      "location": "cooking_cell:pan_zone_1",
+  "interface": {"protocol": "modbus", "address": "modbus://example-host.local:502/1"},
+      "calibration": {"last_calibrated": null, "method": "offset_gain"},
+      "safety_flags": ["do_not_override_critical"],
+      "supported_actions": ["heat","sear","bake"]
+    },
+    {
+      "id": "sensor.temp.internal_probe_1",
+      "category": "sensor",
+      "type": "temperature",
+      "description": "Inserted internal probe for product internal temperature",
+      "unit": "C",
+      "range": {"min": -40, "max": 300},
+      "precision": 0.2,
+      "sample_rate_hz": 4,
+      "location": "cooking_cell:probe_port_1",
+      "interface": {"protocol": "i2c", "address": "i2c://0x48"},
+      "calibration": {"last_calibrated": null, "method": "two_point"},
+      "safety_flags": ["food_safe"],
+      "supported_actions": ["sear","sous_vide","roast"]
+    },
+    {
+      "id": "sensor.color.colorimeter_vis_1",
+      "category": "sensor",
+      "type": "colorimeter",
+      "description": "Visible spectrum colorimeter for browning detection",
+      "unit": "a.u.",
+      "range": {"min": 0, "max": 1},
+      "precision": 0.01,
+      "sample_rate_hz": 1,
+      "location": "cooking_cell:vision_port_1",
+  "interface": {"protocol": "http", "address": "http://example-vision.local:8080/sensor/color"},
+      "calibration": {"last_calibrated": null, "method": "reference_tile"},
+      "safety_flags": [],
+      "supported_actions": ["sear","roast","bake"]
+    },
+    {
+      "id": "actuator.heater.pan_1",
+      "category": "actuator",
+      "type": "heater",
+      "description": "Pan heater with power and PID control",
+  "control_interface": {"protocol": "http", "address": "http://example-heater.local:8080/heater/pan_1"},
+      "control_signals": ["set_power_pct","set_target_temp","stop"],
+      "safety_limits": {"max_temp_c": 450, "emergency_shutdown_on": ["overtemp","sensor_loss"]},
+      "location": "cooking_cell:pan_zone_1",
+      "supported_actions": ["heat","sear","fry"]
+    },
+    {
+      "id": "actuator.dispenser.powder_1",
+      "category": "actuator",
+      "type": "dispenser",
+      "description": "Precision powder dispenser (salt/seasoning)",
+      "control_interface": {"protocol": "mqtt", "topic": "devices/dispenser/powder_1/cmd"},
+      "resolution": {"min_qty": 0.1, "unit": "g"},
+      "safety_limits": {"max_burst_g": 50},
+      "location": "cooking_cell:dispenser_rack_1",
+      "supported_actions": ["season","sprinkle"]
+    },
+    {
+      "id": "actuator.robot.arm_1",
+      "category": "actuator",
+      "type": "robotic_arm",
+      "description": "6-DOF robotic arm with tool changer (gripper, spatula, whisk)",
+      "control_interface": {"protocol": "ros2", "node": "/arm_1_controller"},
+      "kinematics": {"max_payload_kg": 5, "reach_m": 1.2},
+      "safety_limits": {"collision_monitor": true, "speed_limit_m_s": 0.5},
+      "location": "cooking_cell:arm_mount_1",
+      "supported_actions": ["flip","move","plate","mix","trajectory_follow"]
+    },
+    {
+      "id": "actuator.mixer.motor_1",
+      "category": "actuator",
+      "type": "mixer",
+      "description": "Stirrer motor with RPM control",
+  "control_interface": {"protocol": "modbus", "address": "modbus://example-mixer.local:502/2"},
+      "parameters": {"min_rpm": 10, "max_rpm": 3000},
+      "safety_limits": {"max_rpm": 3200},
+      "location": "cooking_cell:mixer_1",
+      "supported_actions": ["mix","whisk"]
+    }
+  ],
+  "action_map": {
+    "heat": ["actuator.heater.pan_1","sensor.temp.surface_therm_1"],
+    "sear": ["actuator.heater.pan_1","sensor.temp.internal_probe_1","sensor.color.colorimeter_vis_1","actuator.robot.arm_1"],
+    "season": ["actuator.dispenser.powder_1"],
+    "mix": ["actuator.mixer.motor_1","actuator.robot.arm_1"],
+    "plate": ["actuator.robot.arm_1"]
+  }
+}

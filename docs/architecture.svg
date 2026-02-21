@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <style>
+    .lane { fill:#f4f7fb; stroke:#d6e3f2; }
+    .service { fill:#e7f0fb; stroke:#79a7d1; rx:8; ry:8; }
+    .hardware { fill:#eef8f0; stroke:#7bbf8a; rx:8; ry:8; }
+    .infra { fill:#f3f3f3; stroke:#cfcfcf; rx:6; ry:6; }
+    .title { font: 20px sans-serif; fill:#1f2d3d; }
+    .label { font: 14px sans-serif; fill:#1f2d3d; }
+    .small { font: 12px sans-serif; fill:#334455; }
+    .arrow { stroke:#667788; stroke-width:2; fill:none; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#667788" />
+    </marker>
+  </defs>
+
+  <!-- Header -->
+  <text x="24" y="36" class="title">Provision Grid — Optimal Sustained Sustenance (OSS)</text>
+  <text x="24" y="58" class="small">Docs-first, household-first provisioning — forward-facing overview</text>
+
+  <!-- Lanes -->
+  <rect x="20" y="80" width="480" height="560" class="lane"/>
+  <rect x="540" y="80" width="520" height="560" class="lane"/>
+  <rect x="1080" y="80" width="500" height="560" class="lane"/>
+  <text x="36" y="104" class="label">Inputs & Orders</text>
+  <text x="556" y="104" class="label">Orchestration & Planning</text>
+  <text x="1096" y="104" class="label">Pod / Hardware & Depot</text>
+
+  <!-- Left column (Inputs) -->
+  <rect x="60" y="140" width="380" height="60" class="service"/>
+  <text x="80" y="178" class="label">Customer & App UI</text>
+  <rect x="60" y="220" width="380" height="60" class="service"/>
+  <text x="80" y="258" class="label">Order store / URC repository</text>
+  <rect x="60" y="300" width="380" height="60" class="service"/>
+  <text x="80" y="338" class="label">Supplier / Inventory feed</text>
+
+  <!-- Center column (Orchestration) -->
+  <rect x="600" y="140" width="440" height="80" class="service"/>
+  <text x="630" y="178" class="label">URC Interpreter</text>
+  <text x="630" y="196" class="small">validate → plan → execute</text>
+
+  <rect x="600" y="240" width="200" height="60" class="service"/>
+  <text x="620" y="278" class="label">Capability Registry</text>
+
+  <rect x="840" y="240" width="200" height="60" class="service"/>
+  <text x="860" y="278" class="label">GrowthOptimizationEngine</text>
+  <rect x="600" y="340" width="440" height="60" class="service"/>
+  <text x="620" y="378" class="label">Order & Inventory Service</text>
+
+  <!-- Right column (Hardware) -->
+  <rect x="1120" y="140" width="350" height="120" class="hardware"/>
+  <text x="1140" y="170" class="label">Pod Control Plane</text>
+  <text x="1140" y="190" class="small">Actuators: heater, pumps, robotic_arm</text>
+  <text x="1140" y="206" class="small">Sensors: temp probe, colorimeter, load cell</text>
+  <rect x="1120" y="280" width="350" height="100" class="hardware"/>
+  <text x="1140" y="310" class="label">Depot Ops</text>
+  <text x="1140" y="332" class="small">Wash/CIP, Return Logistics (RFID/QR)</text>
+
+  <!-- Bottom infra -->
+  <rect x="20" y="660" width="1560" height="140" class="infra"/>
+  <text x="40" y="690" class="label">Data & Infrastructure</text>
+  <text x="40" y="712" class="small">Telemetry & Audit DB  •  Analytics / KPI dashboard  •  CI & Tests (mock capability_registry.json)</text>
+
+  <!-- Arrows -->
+  <path d="M440 170 L600 170" class="arrow"/>
+  <text x="470" y="160" class="small">URC / recipe →</text>
+  <path d="M760 220 L760 240" class="arrow"/>
+  <path d="M760 300 L760 340" class="arrow"/>
+  <path d="M1040 170 L1120 170" class="arrow"/>
+  <text x="980" y="160" class="small">Execution plan →</text>
+  <path d="M1250 350 L1250 420" class="arrow"/>
+  <path d="M1250 500 L760 740" class="arrow"/>
+
+  <!-- Legend -->
+  <rect x="1260" y="660" width="300" height="110" fill="#ffffff" stroke="#ddd" rx="6"/>
+  <text x="1276" y="680" class="label">Legend</text>
+  <text x="1276" y="700" class="small">Blue boxes: services</text>
+  <text x="1276" y="718" class="small">Green boxes: hardware & depot</text>
+  <text x="1276" y="736" class="small">Gray strip: data & infra</text>
+
+</svg>

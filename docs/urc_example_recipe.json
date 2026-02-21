@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "id": "recipe-0001",
+  "name": "Basic Seared Salmon",
+  "description": "Seared salmon fillet with lemon butter sauce",
+  "tags": ["protein","seafood","entree"],
+  "servings": 2,
+  "ingredients": [
+    {"id":"ing-1","name":"salmon fillet","forms":["raw","skin-on"],"default_quantity":{"value":300,"unit":"g"}},
+    {"id":"ing-2","name":"salt","forms":["granular"],"default_quantity":{"value":2,"unit":"g"}},
+    {"id":"ing-3","name":"butter","forms":["solid"],"default_quantity":{"value":30,"unit":"g"}},
+    {"id":"ing-4","name":"lemon","forms":["juice"],"default_quantity":{"value":10,"unit":"ml"}}
+  ],
+  "equipment": ["pan","stove","spatula","thermometer"],
+  "steps": [
+    {
+      "id":"s1",
+      "action":"season",
+      "description":"Season salmon with salt",
+      "inputs":[{"ingredientId":"ing-1","quantity":{"value":300,"unit":"g"}},{"ingredientId":"ing-2","quantity":{"value":2,"unit":"g"}}],
+      "requiredSensors":[],
+      "parallelizable": false
+    },
+    {
+      "id":"s2",
+      "action":"heat",
+      "description":"Heat pan to medium-high",
+      "parameters":{"target_temp_c":200,"duration_s":30},
+      "requiredSensors":["surface_temperature"],
+      "checks":[{"type":"temperature_reached","params":{"target":200,"tolerance":5}}],
+      "parallelizable": false
+    },
+    {
+      "id":"s3",
+      "action":"sear",
+      "description":"Sear salmon, skin side down, until internal temp 50C",
+      "inputs":[{"ingredientId":"ing-1","quantity":{"value":300,"unit":"g"}}],
+      "requiredSensors":["internal_temperature","surface_color"],
+      "checks":[{"type":"internal_temp","params":{"target":50,"tolerance":1}}],
+      "contingency":{"on_fail":{"action":"extend_time","params":{"extra_s":30}}},
+      "parallelizable": false
+    },
+    {
+      "id":"s4",
+      "action":"sauce_prepare",
+      "description":"Melt butter and add lemon",
+      "inputs":[{"ingredientId":"ing-3","quantity":{"value":30,"unit":"g"}},{"ingredientId":"ing-4","quantity":{"value":10,"unit":"ml"}}],
+      "parameters":{"heat":60},
+      "requiredSensors":["temperature"],
+      "parallelizable": true
+    },
+    {
+      "id":"s5",
+      "action":"plate",
+      "description":"Plate salmon and spoon sauce",
+      "parallelizable": false
+    }
+  ],
+  "sensoryGoals":{"texture":"crispy_skin","moisture_pct":60},
+  "nutrition":{"calories":650,"protein_g":45}
+}

@@ -1,0 +1,64 @@
+{
+  "name": "autonomous-food-system",
+  "version": "0.1.0",
+  "description": "Autonomous Food System - Recipe Management and Cooking Coordination Prototype",
+  "main": "src/backend/server.js",
+  "scripts": {
+    "start": "node src/backend/server.js",
+    "dev": "nodemon src/backend/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "smoke": "node scripts/smoke.js",
+    "build": "npm run build:frontend",
+    "build:frontend": "node -e \"const fs=require('fs'); const {execSync}=require('child_process'); if(fs.existsSync('src/frontend/package.json')){ execSync('npm run build',{cwd:'src/frontend',stdio:'inherit'}); } else { console.log('No src/frontend in this repo; skipping frontend build.'); }\"",
+    "install:all": "node -e \"const fs=require('fs'); const {execSync}=require('child_process'); execSync('npm install',{stdio:'inherit'}); if(fs.existsSync('src/frontend/package.json')){ execSync('npm install',{cwd:'src/frontend',stdio:'inherit'}); } else { console.log('No src/frontend in this repo; skipping frontend install.'); }\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write src/"
+  },
+  "keywords": [
+    "automation",
+    "recipes",
+    "ai",
+    "cooking",
+    "food-system",
+    "resource-management",
+    "sustainability",
+    "agriculture"
+  ],
+  "author": "aRcHmaGe333",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.2",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@types/jest": "^29.5.4",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.47.0",
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aRcHmaGe333/AutonomousFoodSystem.git"
+  }
+}

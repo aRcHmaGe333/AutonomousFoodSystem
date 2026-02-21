@@ -1,0 +1,8 @@
+{
+  "yield_per_cycle_kg": 3.5,
+  "cycles_per_week": 7,
+  "person_hours_per_kg_manual": 0.8,
+  "downtime_fraction": 0.05,
+  "maintenance_person_hours_per_week": 2,
+  "target_person_hours": 10
+}

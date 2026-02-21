@@ -1,0 +1,143 @@
+# ALL RIGHTS RESERVED — AUTHORSHIP & PATENT CLAIM LICENSE
+# with VALUEFLOW UNIVERSAL ACCESS
+
+**APC-VF License v2.0 — February 2026**
+
+---
+
+## PREAMBLE
+
+This work exists because its Author created it. The Author published it first, publicly, with cryptographic proof of the date and content. No prior record of this work exists.
+
+The Author retains complete ownership. But ownership without access is hoarding, and hoarding is waste. A superior engine blueprint sitting behind a locked door while the world builds inferior engines is a failure of civilization, not a triumph of rights.
+
+This license solves both problems at once: the Author owns it, and the world can use it — under one condition.
+
+---
+
+## PART ONE: AUTHORSHIP & PATENT CLAIM
+
+### I. Declaration of Authorship
+
+**Author:** aRcHmaGe333
+
+The contents of this repository, project, or body of work — all files, ideas, methods, systems, and functional content herein (the "Work") — are the original creation of the Author.
+
+### II. Patent Claim by Public Record
+
+This publication constitutes a **public, timestamped, cryptographically verifiable patent claim**.
+
+| Proof Layer | Value |
+|---|---|
+| **Merkle Root / Tree Hash** | *(populated automatically on first push — see `.timestamps/`)* |
+| **RFC 3161 Timestamp Token** | `.timestamps/[HASH].tsr` |
+| **Redundant Timestamp** | `.timestamps/[HASH].ots` |
+| **Date of First Publication** | *(recorded by timestamp on first push to GitHub)* |
+
+The Merkle root covers every file as a single unit. The RFC 3161 token is independently verifiable by anyone using OpenSSL. No prior public record of this Work exists. The Author published first.
+
+### III. Prior Art Defense
+
+This publication establishes irrevocable prior art. Any third-party attempt to file a patent or IP claim over any concept described herein is invalidated by this public record of prior disclosure.
+
+### IV. Duration
+
+No expiration. No renewal fees. No maintenance. The timestamp is permanent. The claim stands.
+
+---
+
+## PART TWO: VALUEFLOW UNIVERSAL ACCESS
+
+### V. Grant of Use Under Revenue Sharing
+
+Despite the all-rights-reserved status declared above, the Author **grants universal, worldwide, perpetual access** to use, implement, manufacture, adapt, and build upon the Work — subject to the following condition:
+
+**Any party that generates revenue from the use of this Work, or from any derivative of this Work, must share that revenue with the Author according to the allocation rule below.**
+
+This is not a suggestion. This is the price of access.
+
+### VI. Allocation Rule
+
+The Author sets the following revenue share:
+
+```
+┌─────────────────────────────────────────────────┐
+│                                                 │
+│   AUTHOR'S SHARE:    50%                        │
+│   USER'S SHARE:      50%                        │
+│                                                 │
+└─────────────────────────────────────────────────┘
+```
+
+**Configuration notes:**
+
+- The Author may set any ratio. There is no mandated split.
+- The Author may specify different ratios for different use cases (e.g., commercial vs. educational, small business vs. enterprise).
+- The Author may update the ratio for future users. Existing agreements remain at the rate active when use began.
+- For multi-generational derivatives (A creates, B adapts, C adapts B's work), the Author may specify cascading shares or a flat pool model. If unspecified, each generation splits with its direct upstream creator at the stated ratio.
+
+### VII. What Counts as Revenue
+
+"Revenue" means any monetary or economic benefit derived from the Work or any derivative, including but not limited to: direct sales, subscription fees, licensing income, advertising revenue, service fees, consulting income attributable to the Work, manufacturing profits, and any other form of compensation.
+
+Revenue is counted at the gross level before the user's internal costs, unless the Author explicitly agrees to a net-revenue model.
+
+### VIII. Settlement
+
+Revenue sharing may be settled through any mechanism, including:
+
+- Direct payment (bank transfer, payment processor split, invoicing)
+- Payment platform integration (Stripe Connect, PayPal, etc.)
+- Periodic batch settlement (monthly, quarterly)
+- Smart contract automation (if both parties elect it)
+
+The specific mechanism is agreed between Author and user. If no mechanism is agreed, the user must report revenue quarterly and settle within 30 days of reporting.
+
+### IX. Attribution
+
+Every use of the Work or derivative must include clear attribution to the Author. At minimum:
+
+- The Author's name or designated identifier.
+- A link to the original repository or publication.
+- A statement that the work is used under APC-VF License v2.0.
+
+Removal or obscuring of attribution voids the grant of use and converts any continued use into infringement under Part One.
+
+### X. Non-Revenue Use
+
+Use of the Work that generates zero revenue — personal use, education, research, non-commercial experimentation — is **permitted freely** with attribution. The moment revenue is generated, the allocation rule activates.
+
+### XI. The Duty Clause
+
+This Work is published because the Author believes that superior knowledge must be applied wherever it is applicable. No car should use an inferior motor when a better one exists. No process should waste resources when a leaner one has been devised. No field should remain unimproved when the improvement is available.
+
+The ValueFlow grant exists to ensure this Work reaches every place it can improve outcomes — while ensuring the Author is compensated for making it possible.
+
+**Hoarding is waste. Gatekeeping is waste. Duplication of effort when a solution already exists is waste. This license eliminates all three.**
+
+---
+
+## PART THREE: ENFORCEMENT AND TERMS
+
+### XII. Infringement
+
+Use of the Work without revenue sharing (when revenue is generated) constitutes infringement. The Author reserves:
+
+- All legal remedies under applicable law in any jurisdiction.
+- The right to publicly identify infringers.
+- The right to revoke the ValueFlow grant for specific infringers, converting their status to unauthorized use under the all-rights-reserved terms of Part One.
+
+### XIII. Severability
+
+If any clause is unenforceable in a given jurisdiction, all others remain in effect.
+
+### XIV. Acceptance
+
+By accessing, using, implementing, or building upon the Work, you accept the terms of this license in full — the authorship claim, the revenue-sharing obligation, and the attribution requirement.
+
+---
+
+**© Slavko Stojnić — in Stockholm, February 11th, 2026. All rights reserved.**
+**Authorship & Patent Claim established by public record.**
+**Universal access granted under ValueFlow revenue sharing.**
+**Use it. Build on it. Pay the creator. Move humanity forward. Keep our planet alive.**
