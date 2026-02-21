@@ -219,7 +219,7 @@ This repository is for reference and disclosure purposes only. No part of the co
 
 If this project resonates with you — if you think food infrastructure should be autonomous, humane, and publicly proven — you can support its development directly.
 
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20work-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/slavkostojnic)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20work-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/earthcraft)
 
 Every contribution funds continued research, prototype development, and keeping this work open and timestamped for anyone to verify and build on.
 
