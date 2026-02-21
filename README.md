@@ -215,6 +215,14 @@ This project represents a comprehensive vision for transforming global food syst
 
 This repository is for reference and disclosure purposes only. No part of the content may be used, copied, or distributed without explicit written permission from the copyright owner.
 
+## Support This Work
+
+If this project resonates with you — if you think food infrastructure should be autonomous, humane, and publicly proven — you can support its development directly.
+
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20work-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/slavkostojnic)
+
+Every contribution funds continued research, prototype development, and keeping this work open and timestamped for anyone to verify and build on.
+
 ## Contact
 
 For inquiries about collaboration, licensing, or implementation partnerships, contact the repository owner via [GitHub profile](https://github.com/aRcHmaGe333).
