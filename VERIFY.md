@@ -83,3 +83,9 @@ Verification requires no accounts, no fees, no permissions, and no trust in the 
 - Approximately 10 seconds.
 
 That is what proof looks like when it is not behind a paywall.
+
+---
+
+## Further Reading
+
+For the full technical rationale behind this system, see [docs/STAMPED-whitepaper.md](./docs/STAMPED-whitepaper.md).
