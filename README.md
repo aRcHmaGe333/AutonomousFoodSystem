@@ -46,16 +46,13 @@ To develop a realistic, data-grounded concept of self-maintaining machine system
 - **Closed-Loop Waste:** Anaerobic digesters convert waste to energy and fertilizer that feeds back into the growing modules.
 - **Specification:** [docs/LIVESTOCK_MODULE_SPEC.md](./docs/LIVESTOCK_MODULE_SPEC.md)
 
-### 5. **Smart Distribution Network**
-- **Local Production:** Distributed nodes serving 100-500 population capacity
-- **Demand Prediction:** Consumption forecasting
-- **Resource Optimization:** Minimal transport and environmental impact
-- **Adaptive Scaling:** Modular expansion based on population growth
+### 5. **Distribution Network** *(separate project)*
+Distribution and last-mile delivery is developed as a standalone business project: **[PrecisionDelivery](https://github.com/aRcHmaGe333/PrecisionDelivery)**. Subscription-based, zero-waste food delivery starting with electric vehicle fleets, progressing to gravity-accelerated tube infrastructure. The two projects connect at the delivery interface — once food is produced here, it enters PrecisionDelivery's network.
 
 ## Technical Implementation
 
 ### Current Status: Working Prototype
-This repository includes a software-only prototype implementation of the recipe management, cooking coordination, and (simulated) growing/distribution APIs.
+This repository includes a software-only prototype implementation of the recipe management, cooking coordination, livestock management, and (simulated) growing APIs.
 
 Important notes:
 - Hardware integration is simulation-first; physical sensor/actuator/robot drivers are not implemented yet.
@@ -127,13 +124,12 @@ autonomous-food-system/
 +-- src/backend/           # Node.js/Express server
 |   +-- models/            # Data models (Recipe, GrowingModule, LivestockUnit, etc.)
 |   +-- routes/            # API endpoints (recipes, growing, livestock, cooking, etc.)
-|   +-- services/          # Business logic (optimization, livestock analytics, distribution)
+|   +-- services/          # Business logic (optimization, livestock analytics)
 |   +-- middleware/        # Validation, rate limiting, errors
 |   `-- utils/             # Logging, helpers
 +-- autonomous_food_system/ # Python modules (self-healing, monitoring)
 +-- tests/                 # Test suite
 +-- docs/                  # Technical documentation
-+-- distribution-system/   # Advanced distribution concepts (gravity tubes, logistics)
 `-- README_DEVELOPMENT.md  # Detailed development guide
 ```
 
