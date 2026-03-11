@@ -3,6 +3,13 @@
 
 const fs = require('fs');
 
+const SENSOR_ALIASES = {
+  surface_temperature: ['temperature'],
+  internal_temperature: ['temperature'],
+  temperature: ['temperature'],
+  surface_color: ['colorimeter']
+};
+
 function loadRegistry(registry) {
   // registry can be object or path
   if (!registry) throw new Error('registry required');
@@ -17,9 +24,18 @@ function findSensorTypes(reg) {
   const types = new Set();
   if (!reg.capabilities) return types;
   for (const c of reg.capabilities) {
-    if (c.category === 'sensor') types.add(c.type);
+    if (c.category === 'sensor') {
+      types.add(c.type);
+      if (Array.isArray(c.aliases)) {
+        for (const alias of c.aliases) types.add(alias);
+      }
+    }
   }
   return types;
+}
+
+function getSensorCandidates(sensorName) {
+  return [sensorName, ...(SENSOR_ALIASES[sensorName] || [])];
 }
 
 function validate(urcDoc, registryInput) {
@@ -48,9 +64,8 @@ function validate(urcDoc, registryInput) {
       // required sensors
       if (Array.isArray(step.requiredSensors)) {
         for (const s of step.requiredSensors) {
-          // s is a sensor type like 'internal_temperature' — check registry has a matching sensor.type
-          // We allow either matching type or capability id
-          const hasType = Array.from(sensorTypes).some(t => t === s || t.includes(s));
+          const sensorCandidates = getSensorCandidates(s);
+          const hasType = sensorCandidates.some(candidate => Array.from(sensorTypes).some(t => t === candidate || t.includes(candidate)));
           const hasId = (reg.capabilities || []).some(c => c.id === s);
           if (!hasType && !hasId) errors.push(`missing required sensor '${s}' for step ${step.id}`);
         }
@@ -108,7 +123,7 @@ async function execute(plan, executor) {
         break;
       }
     } else {
-      // no executor provided — record a dry-run entry
+      // no executor provided - record a dry-run entry
       log.push({ stepId: item.stepId, status: 'dry-run', capability: cap, command: { action: item.action, parameters: item.parameters } });
     }
   }

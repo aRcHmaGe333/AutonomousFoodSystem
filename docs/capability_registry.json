@@ -9,6 +9,7 @@
       "id": "sensor.temp.surface_therm_1",
       "category": "sensor",
       "type": "temperature",
+      "aliases": ["surface_temperature"],
       "description": "Surface thermocouple for pan/oven surface temperature",
       "unit": "C",
       "range": {"min": -40, "max": 800},
@@ -24,6 +25,7 @@
       "id": "sensor.temp.internal_probe_1",
       "category": "sensor",
       "type": "temperature",
+      "aliases": ["internal_temperature"],
       "description": "Inserted internal probe for product internal temperature",
       "unit": "C",
       "range": {"min": -40, "max": 300},
@@ -39,6 +41,7 @@
       "id": "sensor.color.colorimeter_vis_1",
       "category": "sensor",
       "type": "colorimeter",
+      "aliases": ["surface_color"],
       "description": "Visible spectrum colorimeter for browning detection",
       "unit": "a.u.",
       "range": {"min": 0, "max": 1},
@@ -99,6 +102,7 @@
     "heat": ["actuator.heater.pan_1","sensor.temp.surface_therm_1"],
     "sear": ["actuator.heater.pan_1","sensor.temp.internal_probe_1","sensor.color.colorimeter_vis_1","actuator.robot.arm_1"],
     "season": ["actuator.dispenser.powder_1"],
+    "sauce_prepare": ["actuator.heater.pan_1","actuator.mixer.motor_1"],
     "mix": ["actuator.mixer.motor_1","actuator.robot.arm_1"],
     "plate": ["actuator.robot.arm_1"]
   }

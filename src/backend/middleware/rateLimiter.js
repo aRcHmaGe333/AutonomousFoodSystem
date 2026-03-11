@@ -6,7 +6,7 @@
 const rateLimitStore = new Map();
 
 // Clean up old entries every 5 minutes
-setInterval(() => {
+const cleanupInterval = setInterval(() => {
   const now = Date.now();
   const fiveMinutesAgo = now - 5 * 60 * 1000;
   
@@ -16,6 +16,11 @@ setInterval(() => {
     }
   }
 }, 5 * 60 * 1000);
+
+// Avoid keeping the Node.js process alive just for store cleanup.
+if (typeof cleanupInterval.unref === 'function') {
+  cleanupInterval.unref();
+}
 
 /**
  * Create a rate limiter with specified options

@@ -130,3 +130,7 @@ These are longer-term investigations that inform future development direction.
 - [ ] **Research reusable container logistics** - The distribution service assumes 95% container return rate. Investigate real-world reusable packaging systems for realistic targets.
 - [ ] **Study regulatory requirements** - Investigate food safety regulations (HACCP, FDA, EU food law) that would apply to an automated food production and distribution system.
 - [ ] **Evaluate edge computing for sensor processing** - Determine whether sensor data processing should happen locally (on-module) vs centrally, and what latency requirements exist for actuator control loops.
+---
+below this point, raw user comment to be converted into tasks, executed in order to generate more tasks
+---
+There was a significant expansion of capabilities in this project. Can you find discrepancies in design and just try to objectively assess whether we can mirror the livestock modules in the way that the growing modules were developed/prototyped. Tell me if you (when you) require help from external researchers. Let's make this repo REALLY presentable and ready for the investors and general public to inspect/ingest.

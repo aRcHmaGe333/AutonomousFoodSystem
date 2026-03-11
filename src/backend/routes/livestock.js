@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const LivestockUnit = require('../models/LivestockUnit');
 const LivestockService = require('../services/LivestockService');
+const LivestockHardwareAbstractionService = require('../services/LivestockHardwareAbstractionService');
 const logger = require('../utils/logger');
 
 // In-memory storage (will be replaced with database)
@@ -9,6 +10,7 @@ const livestockUnits = new Map();
 
 // Initialize service
 const livestockService = new LivestockService();
+const livestockHardwareService = new LivestockHardwareAbstractionService();
 
 /**
  * Initialize sample livestock units
@@ -61,6 +63,16 @@ const initializeSampleUnits = () => {
       }
       // Set total to match capacity.current (sample animals are representative)
       unit.animalPopulation.total = count;
+      if (unit.unitType === 'dairy') {
+        unit.performance.averageDailyYieldPerCow = 28;
+        unit.performance.milkQuality = {
+          fatPercent: 3.9,
+          proteinPercent: 3.3,
+          somaticCellCount: 145000
+        };
+        unit.integrations.growingSystem.connected = true;
+        unit.integrations.cookingSystem.connected = true;
+      }
     }
 
     livestockUnits.set(unit.id, unit);
@@ -169,6 +181,51 @@ router.put('/units/:id', (req, res) => {
 });
 
 // --- Milking Operations ---
+
+// GET /api/livestock/units/:id/hardware/abstraction - Livestock subsystem contract
+router.get('/units/:id/hardware/abstraction', (req, res) => {
+  try {
+    const unit = livestockUnits.get(req.params.id);
+    if (!unit) {
+      return res.status(404).json({ error: 'Not Found', message: `Livestock unit ${req.params.id} not found` });
+    }
+
+    res.json(livestockHardwareService.getHardwareAbstraction(unit));
+  } catch (error) {
+    logger.error('Error retrieving livestock hardware abstraction:', error);
+    res.status(500).json({ error: 'Internal Server Error', message: 'Failed to retrieve livestock hardware abstraction' });
+  }
+});
+
+// GET /api/livestock/units/:id/simulation/status - Composite livestock simulation surface
+router.get('/units/:id/simulation/status', (req, res) => {
+  try {
+    const unit = livestockUnits.get(req.params.id);
+    if (!unit) {
+      return res.status(404).json({ error: 'Not Found', message: `Livestock unit ${req.params.id} not found` });
+    }
+
+    res.json(livestockHardwareService.getSimulationStatus(unit));
+  } catch (error) {
+    logger.error('Error retrieving livestock simulation status:', error);
+    res.status(500).json({ error: 'Internal Server Error', message: 'Failed to retrieve livestock simulation status' });
+  }
+});
+
+// POST /api/livestock/units/:id/simulation/step - Advance livestock simulation state
+router.post('/units/:id/simulation/step', (req, res) => {
+  try {
+    const unit = livestockUnits.get(req.params.id);
+    if (!unit) {
+      return res.status(404).json({ error: 'Not Found', message: `Livestock unit ${req.params.id} not found` });
+    }
+
+    res.json(livestockHardwareService.advanceSimulation(unit, req.body || {}));
+  } catch (error) {
+    logger.error('Error advancing livestock simulation:', error);
+    res.status(500).json({ error: 'Internal Server Error', message: 'Failed to advance livestock simulation' });
+  }
+});
 
 // GET /api/livestock/units/:id/milking/status - Milking system status
 router.get('/units/:id/milking/status', (req, res) => {
@@ -440,6 +497,21 @@ router.get('/units/:id/waste', (req, res) => {
   }
 });
 
+// GET /api/livestock/units/:id/resource-loop - Digester and fertilizer feedback path
+router.get('/units/:id/resource-loop', (req, res) => {
+  try {
+    const unit = livestockUnits.get(req.params.id);
+    if (!unit) {
+      return res.status(404).json({ error: 'Not Found', message: `Livestock unit ${req.params.id} not found` });
+    }
+
+    res.json(livestockHardwareService.getResourceLoopStatus(unit));
+  } catch (error) {
+    logger.error('Error retrieving livestock resource loop:', error);
+    res.status(500).json({ error: 'Internal Server Error', message: 'Failed to retrieve livestock resource loop' });
+  }
+});
+
 // GET /api/livestock/units/:id/resources - Resource consumption
 router.get('/units/:id/resources', (req, res) => {
   try {
@@ -532,15 +604,19 @@ router.get('/inventory', (req, res) => {
 
     livestockUnits.forEach(unit => {
       if (unit.status === 'active' && unit.unitType !== 'beef') {
-        const dailyMilk = unit.performance.averageDailyYieldPerCow * unit.animalPopulation.total;
-        if (dailyMilk > 0) {
-          inventory.push({
-            unitId: unit.id,
-            unitName: unit.name,
-            product: 'raw_milk',
-            estimatedDailyLiters: dailyMilk,
-            quality: unit.performance.milkQuality,
-            availableNow: unit.milkingSystem.status === 'idle'
+        const pipeline = livestockHardwareService.getDairyPipeline(unit);
+        if (pipeline.length > 0) {
+          pipeline.forEach(stage => {
+            inventory.push({
+              unitId: unit.id,
+              unitName: unit.name,
+              product: stage.product,
+              stage: stage.stage,
+              status: stage.status,
+              estimatedDailyLiters: stage.availableLiters,
+              quality: unit.performance.milkQuality,
+              availableNow: unit.milkingSystem.status === 'idle' && stage.status !== 'conceptual'
+            });
           });
         }
       }
@@ -572,6 +648,25 @@ router.get('/units/:id/health-report', (req, res) => {
   } catch (error) {
     logger.error('Error generating health report:', error);
     res.status(500).json({ error: 'Internal Server Error', message: 'Failed to generate health report' });
+  }
+});
+
+// GET /api/livestock/units/:id/dairy-pipeline - Current dairy output stages
+router.get('/units/:id/dairy-pipeline', (req, res) => {
+  try {
+    const unit = livestockUnits.get(req.params.id);
+    if (!unit) {
+      return res.status(404).json({ error: 'Not Found', message: `Livestock unit ${req.params.id} not found` });
+    }
+
+    res.json({
+      unitId: unit.id,
+      stages: livestockHardwareService.getDairyPipeline(unit),
+      updatedAt: new Date()
+    });
+  } catch (error) {
+    logger.error('Error retrieving dairy pipeline:', error);
+    res.status(500).json({ error: 'Internal Server Error', message: 'Failed to retrieve dairy pipeline' });
   }
 });
 

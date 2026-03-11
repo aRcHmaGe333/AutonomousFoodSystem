@@ -29,15 +29,17 @@ module.exports = {
     'json'
   ],
   
-  // Coverage threshold (disabled for initial development)
-  // coverageThreshold: {
-  //   global: {
-  //     branches: 70,
-  //     functions: 70,
-  //     lines: 70,
-  //     statements: 70
-  //   }
-  // },
+  // Baseline coverage floor.
+  // This is intentionally modest and reflects the current state of the prototype.
+  // Raise these thresholds as route and service coverage improves.
+  coverageThreshold: {
+    global: {
+      branches: 25,
+      functions: 20,
+      lines: 30,
+      statements: 30
+    }
+  },
   
   // Setup files
   setupFilesAfterEnv: ['<rootDir>/tests/setup.js'],

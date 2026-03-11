@@ -1,10 +1,34 @@
-# Livestock Production Module — Specification
+# Dairy-First Livestock Module — Specification
 
 ## Overview
 
-The Livestock Module extends the Autonomous Food System with industrial-scale animal husbandry — specifically dairy and meat production using **passive mechanical design** rather than complex robotics or AI-driven management.
+The dairy-first livestock module extends the Autonomous Food System with a software-first livestock prototype using **passive mechanical design** rather than complex robotics or AI-driven management.
+
+Current scope:
+
+- dairy is the primary implemented and documented path
+- broader livestock-family support remains compatible with the architecture
+- beef, poultry, and mixed-unit framing should be treated as expansion direction, not equal current maturity
 
 The core philosophy: replace active robotic complexity with **environmental determinism**. The machine doesn't wrestle the animal; the geometry of the environment guides the animal into voluntary cooperation.
+
+## Current Status
+
+This module is ahead in software structure and behind in physical validation.
+
+What exists now:
+
+- a real software model
+- route and service surfaces
+- dairy-oriented analytics and tracking
+- documented design assumptions
+
+What does not yet exist at equal maturity:
+
+- physically validated corridor and milking hardware
+- externally reviewed welfare claims
+- investor-grade operational proof
+- parity with growing in hardware abstraction formalization
 
 ## Core Concepts
 
@@ -28,12 +52,12 @@ The narrowing path doubles as a hygiene station:
 
 ### 3. Animal Welfare as Engineering
 
-This isn't ethics layered on top — it's the structural foundation:
+This is treated as a design principle, not as a validated outcome claim:
 
-- **Voluntary Participation**: Cows associate the path with physical relief. They queue up. No herding code required.
-- **Low Cortisol = High Yield**: Calm animals produce 10–15% more milk, with higher fat and protein content.
-- **Extended Productive Life**: Traditional high-stress farms burn out cows in 2–3 lactations. A comfort-first system extends productive life to 10+ years, eliminating constant replacement costs.
-- **Immune Resilience**: Reduced stress strengthens immune systems, lowering disease outbreak risk across the network.
+- **Voluntary Participation**: The system is intended to reduce stress and handling friction rather than rely on force-heavy control.
+- **Lower-Stress Operation**: The design assumes calmer handling should improve throughput quality and animal condition, but those gains still require real-world validation.
+- **Longer Productive Life Direction**: Reduced stress and better handling may improve productive lifespan, but that should not be presented as proven from this repo alone.
+- **Health Resilience Direction**: Welfare-aware operation is treated as a practical systems goal, not a closed evidence question.
 
 ### 4. Zone Separation Architecture
 
@@ -63,6 +87,12 @@ Hardware is designed to be swapped, not permanent. Modules are standardized unit
 ## Data Model: LivestockUnit
 
 A `LivestockUnit` represents a single production facility within the network.
+
+Important scope note:
+
+- the current data model allows multiple unit types
+- the implemented business logic is still centered on dairy operations
+- other livestock types should be treated as forward-compatible placeholders until dedicated workflows exist
 
 ### Properties
 
@@ -206,15 +236,15 @@ A `LivestockUnit` represents a single production facility within the network.
 
 ## Integration Points
 
-### Growing Module → Livestock Module
-- Digestate from anaerobic digester feeds back as fertilizer for growing modules.
+### Growing Modules → Dairy-First Livestock Module
+- Digestate from anaerobic digestion feeds back as fertilizer for growing modules.
 - Feed crop yields from growing modules supply the livestock feed pipeline.
 
-### Livestock Module → Cooking System
+### Dairy-First Livestock Module → Cooking System
 - Dairy output (milk, separated cream) notifies the cooking system of new ingredients.
-- Meat processing output enters the recipe/cooking pipeline.
+- Non-dairy livestock output should be treated as future expansion until the relevant processing logic exists.
 
-### Livestock Module → Distribution System
+### Dairy-First Livestock Module → Distribution Boundary
 - Dairy products enter precision distribution with consumption tracking.
 - Cold-chain requirements integrated into distribution scheduling.
 
@@ -222,15 +252,20 @@ A `LivestockUnit` represents a single production facility within the network.
 
 The system scales as a **network of standardized units**. One code fix applies to every unit simultaneously. Units are modular — if a corridor design is improved, the old module is swapped out, not retrofitted.
 
-At scale:
-- **Traditional**: 1 human per 100–200 cattle.
-- **This network**: 1 human per 10,000+ cattle, responding only to flagged anomalies.
+Design intent at scale:
+
+- reduce labor intensity by shifting routine handling into modular systems and anomaly-driven intervention
+- improve fleet-wide reliability through repeated fixes and standardized unit design
+
+These are design targets. They are not validated deployment metrics yet.
 
 ## Reliability Model
 
 - **Mean Time Between Failure (MTBF)**: Tracked per component class (cradles, sensors, scrapers, walls).
 - **Mean Time Between Human Intervention (MTBHI)**: The key economic metric. If the payoff exceeds the intervention cost at any MTBHI, the system is economically plausible.
 - **Series-Parallel Reliability**: The network is modeled as parallel redundant units. One unit failing doesn't cascade to others.
+
+This reliability model is meaningful at the software and planning level now. It still requires external engineering and physical pilot evidence before being used as a strong real-world operating claim.
 
 ## Materials & Durability
 

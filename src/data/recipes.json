@@ -1,0 +1,3271 @@
+{
+  "recipes": [
+    {
+      "id": "recipe_1771686669312_nfthq7b5l",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-02-21T15:11:09.312Z",
+      "updatedAt": "2026-02-21T15:11:09.312Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1771686688327_x9nkji0qs",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-02-21T15:11:28.327Z",
+      "updatedAt": "2026-02-21T15:11:28.327Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773172642378_8rt260n3g",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T19:57:22.378Z",
+      "updatedAt": "2026-03-10T19:57:22.378Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773172643152_79nlnoapf",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T19:57:23.152Z",
+      "updatedAt": "2026-03-10T19:57:23.152Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179174925_9j8ta9jyx",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:46:14.925Z",
+      "updatedAt": "2026-03-10T21:46:14.925Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179175920_b7zmqiqkg",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:46:15.920Z",
+      "updatedAt": "2026-03-10T21:46:15.920Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179201687_gudfk1pku",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:46:41.687Z",
+      "updatedAt": "2026-03-10T21:46:41.687Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179204873_2elnecppz",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:46:44.873Z",
+      "updatedAt": "2026-03-10T21:46:44.873Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179220197_rth5j0qp1",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:47:00.197Z",
+      "updatedAt": "2026-03-10T21:47:00.197Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179221749_k66cunllg",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:47:01.749Z",
+      "updatedAt": "2026-03-10T21:47:01.749Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179287711_tj6jiyttg",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:48:07.711Z",
+      "updatedAt": "2026-03-10T21:48:07.711Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179289721_8heg1hvmf",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:48:09.721Z",
+      "updatedAt": "2026-03-10T21:48:09.721Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179290537_9qaeppuxl",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:48:10.537Z",
+      "updatedAt": "2026-03-10T21:48:10.537Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179291114_2u6czpxtz",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:48:11.114Z",
+      "updatedAt": "2026-03-10T21:48:11.114Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179646563_wkgq6myjl",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:54:06.563Z",
+      "updatedAt": "2026-03-10T21:54:06.563Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179648143_d72edg7s2",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:54:08.143Z",
+      "updatedAt": "2026-03-10T21:54:08.143Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179648857_gwzmnvz4c",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:54:08.857Z",
+      "updatedAt": "2026-03-10T21:54:08.857Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773179649360_kzre8mvol",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T21:54:09.360Z",
+      "updatedAt": "2026-03-10T21:54:09.360Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773180255093_xirijkx6w",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T22:04:15.093Z",
+      "updatedAt": "2026-03-10T22:04:15.093Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773180275336_4locijqxl",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T22:04:35.336Z",
+      "updatedAt": "2026-03-10T22:04:35.336Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773180277197_5yqfvpz9v",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T22:04:37.197Z",
+      "updatedAt": "2026-03-10T22:04:37.197Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773180278007_4r971prv3",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T22:04:38.008Z",
+      "updatedAt": "2026-03-10T22:04:38.008Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773180278507_ausvffqaz",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-10T22:04:38.507Z",
+      "updatedAt": "2026-03-10T22:04:38.507Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773193963744_r7c3q0e0m",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-11T01:52:43.744Z",
+      "updatedAt": "2026-03-11T01:52:43.744Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773193967910_ej1fswxg4",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-11T01:52:47.910Z",
+      "updatedAt": "2026-03-11T01:52:47.910Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773193969279_hie0vrcg5",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-11T01:52:49.279Z",
+      "updatedAt": "2026-03-11T01:52:49.279Z",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipe_1773193970457_5vc6cpanz",
+      "name": "Automated Pasta Carbonara",
+      "description": "Classic Italian pasta dish optimized for automated preparation",
+      "category": "pasta",
+      "cuisine": "italian",
+      "difficulty": "medium",
+      "servings": 4,
+      "prepTime": 10,
+      "cookTime": 15,
+      "totalTime": 25,
+      "ingredients": [
+        {
+          "name": "spaghetti",
+          "amount": 400,
+          "unit": "g",
+          "type": "pasta"
+        },
+        {
+          "name": "eggs",
+          "amount": 4,
+          "unit": "large",
+          "type": "protein"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 100,
+          "unit": "g",
+          "type": "dairy"
+        },
+        {
+          "name": "pancetta",
+          "amount": 150,
+          "unit": "g",
+          "type": "meat"
+        },
+        {
+          "name": "black pepper",
+          "amount": 1,
+          "unit": "tsp",
+          "type": "spice"
+        }
+      ],
+      "instructions": [
+        {
+          "step": "Boil water for pasta",
+          "timing": 5,
+          "temperature": 100,
+          "action": "boil"
+        },
+        {
+          "step": "Cook spaghetti until al dente",
+          "timing": 8,
+          "action": "cook"
+        },
+        {
+          "step": "Fry pancetta until crispy",
+          "timing": 5,
+          "temperature": 180,
+          "action": "fry"
+        },
+        {
+          "step": "Mix eggs and cheese",
+          "timing": 2,
+          "action": "mix"
+        },
+        {
+          "step": "Combine all ingredients",
+          "timing": 2,
+          "action": "combine"
+        }
+      ],
+      "equipment": [
+        "large_pot",
+        "frying_pan",
+        "mixing_bowl"
+      ],
+      "nutrition": {
+        "calories": 0,
+        "protein": 0,
+        "carbohydrates": 0,
+        "fat": 0,
+        "fiber": 0,
+        "sugar": 0,
+        "sodium": 0
+      },
+      "automation": {
+        "automatable": true,
+        "complexity": "fully_automated",
+        "automationScore": 60,
+        "requiredSensors": [
+          "temperature",
+          "timer",
+          "motion"
+        ],
+        "safetyChecks": [
+          "temperature_monitoring"
+        ],
+        "qualityMetrics": [
+          "completion_time",
+          "ingredient_usage"
+        ]
+      },
+      "analytics": {
+        "successRate": 0,
+        "averageRating": 0,
+        "timesCooked": 0,
+        "lastOptimized": null,
+        "optimizationHistory": []
+      },
+      "tags": [
+        "quick",
+        "italian",
+        "automated",
+        "comfort_food"
+      ],
+      "source": "user",
+      "createdAt": "2026-03-11T01:52:50.457Z",
+      "updatedAt": "2026-03-11T01:52:50.457Z",
+      "version": "1.0.0"
+    }
+  ]
+}

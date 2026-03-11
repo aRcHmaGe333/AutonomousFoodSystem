@@ -1,29 +1,68 @@
-Autonomous Food System — Stakeholder Summary
+# Autonomous Food System â€” Public Summary
 
-Purpose
-- High-level, stakeholder-facing summary of the Autonomous Food System project and its current state.
+## What this is
 
-Overview
-- Scope: Prototype work exploring autonomous food production and precision culinary automation.
-- Status: Research and prototype artifacts with clear pilot plan and safety documentation. This is not a production system.
+Autonomous Food System is a software-first prototype for an autonomous food infrastructure stack.
 
-Key deliverables (public)
-- URC (Universal Recipe Compiler) spec and example
-- Capability registry for cooking/growing cells
-- URC interpreter skeleton and unit tests
-- Safety & certification plan for pilot deployments
-- Telemetry schema and KPI templates
-- Project assessment and prioritized roadmap
+Current scope in this repository:
 
-Pilot & MVP
-- Focus on a single instrumented pod (food production + integrated cooking cell)
-- Deliverables: hardware-simulated interpreter, safety-validated processes, telemetry and KPI dashboard
+- growing modules
+- cooking and portioning
+- dairy-first livestock module
+- shared resource loops
 
-Risks & Assumptions
-- Early-stage research; several components require further engineering, validation, and third-party audits
-- Claims of full autonomy are staged; pilot-level human oversight is required
+This repo is meant to be inspectable. It is not presented as a finished physical deployment.
 
-How to engage
-- Review docs/PROJECT_ASSESSMENT_AND_RECOMMENDATIONS.md for prioritized work
-- Contact repository owner via GitHub profile for collaboration or funding discussions
+## What is real today
+
+- backend APIs and subsystem models
+- recipe and URC execution scaffolding
+- growing module software surfaces
+- dairy-first livestock software and simulation surfaces
+- telemetry, KPI, and validation direction
+- automated test coverage for the current prototype surface
+
+## What is not being claimed
+
+- full physical autonomy
+- validated large-scale livestock deployment
+- certified safety or regulatory approval
+- proven zero-waste or zero-intervention operation
+
+Those remain design goals or validation-stage questions, not finished claims.
+
+## Why this project matters
+
+The project is trying to make food infrastructure more:
+
+- inspectable
+- modular
+- automatable
+- resource-aware
+- compatible with staged real-world validation
+
+The ambition is large, but the repo now separates implemented work from simulated and conceptual work so readers can see what is actually under control.
+
+## Best documents to start with
+
+- [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md)
+- [architecture.md](architecture.md)
+- [PLAUSIBILITY_AND_VALIDATION.md](PLAUSIBILITY_AND_VALIDATION.md)
+- [LIVESTOCK_MODULE_SPEC.md](LIVESTOCK_MODULE_SPEC.md)
+- [PILOT_ROADMAP_DAIRY_FIRST.md](PILOT_ROADMAP_DAIRY_FIRST.md)
+- [PROJECT_ASSESSMENT_AND_RECOMMENDATIONS.md](PROJECT_ASSESSMENT_AND_RECOMMENDATIONS.md)
+
+## Current framing
+
+- This is a serious prototype.
+- It is not yet a physically validated end-state system.
+- Livestock should currently be read as dairy-first, not as a fully generalized livestock platform.
+
+## For collaborators and funders
+
+If you want the short technical diligence view, read [INVESTOR_DILIGENCE_SUMMARY.md](INVESTOR_DILIGENCE_SUMMARY.md).
+
+If you want the broader proof boundaries first, read [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md).
+
+If you want to see the next livestock validation gate rather than the concept pitch, read [PILOT_ROADMAP_DAIRY_FIRST.md](PILOT_ROADMAP_DAIRY_FIRST.md) and [DAIRY_FIRST_CLAIM_BOUNDARIES.md](DAIRY_FIRST_CLAIM_BOUNDARIES.md).
 

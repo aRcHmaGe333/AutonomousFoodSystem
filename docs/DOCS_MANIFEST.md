@@ -1,57 +1,88 @@
-# Docs Manifest — Docs-first project policy
+# Docs Manifest
 
-This repository treats documentation as the primary product. The code and scripts are supporting artifacts used to prototype and validate the designs described here. The goal of the docs-first approach is to make the plans, inventions, and operational designs authoritative, reproducible, and stakeholder-ready.
+Status: Draft
 
-File status categories
-----------------------
+Purpose
 
-- approved: Finalized and stakeholder-ready documents. These are the primary artifacts for external sharing.
-- Draft: Work-in-progress documents that may change frequently. Good candidates for collaboration and review.
-- Action-needed: Docs that require a short follow-up (add metrics, add owner, verify sources) before moving to approved.
-- Archived: Historical or generated artifacts kept for provenance; not used as a source of truth.
+- Show new readers which documents are canonical, which are support references, and which should not be treated as the main truth surface.
+- Prevent the repo from presenting exploratory or historical artifacts as equal in authority to the current proof-status and architecture docs.
 
-Current suggested assignments (quick pass)
------------------------------------------
+Read in this order
 
-- approved:
-  - `docs/UNIFIED_DIRECTION_SNAPSHOT.md` (generated, approved snapshot)
-  - `docs/packaging_guidance.md`
-  - `docs/vehicle_modularity.md`
-  - `docs/manhours_savings.md`
-  - `docs/NAMING_AND_NOTES.md`
+1. [README.md](../README.md)
+2. [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md)
+3. [architecture.md](architecture.md)
+4. [STATUS.md](STATUS.md)
+5. [LIVESTOCK_MODULE_SPEC.md](LIVESTOCK_MODULE_SPEC.md)
+6. [LIVESTOCK_HARDWARE_AND_SIMULATION.md](LIVESTOCK_HARDWARE_AND_SIMULATION.md)
 
-- Draft:
-  - `docs/delivery_decision_checklist.md` (plain-language draft; review and finalize)
-  - `docs/NEW_BEARINGS.md` (working note; keep as draft or deprecate to Archived once merged)
+Canonical external-facing docs
 
-- Action-needed:
-  - `docs/ORIGINAL_CHAT_COMPARISON.md` (verify personal data and provenance; remove sensitive links)
-  - `docs/monetary_breakeven.md` (add sample scenarios / CSV template)
-  - `docs/telemetry_api_openapi.yaml` (confirm endpoints and required fields)
+- [README.md](../README.md): primary repository entry point.
+- [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md): source of truth for implemented, simulated, conceptual, and externally validated boundaries.
+- [architecture.md](architecture.md): system map and subsystem boundary view.
+- [STATUS.md](STATUS.md): concise current-state summary.
+- [README_PUBLIC.md](README_PUBLIC.md): short public-facing orientation page.
+- [INVESTOR_DILIGENCE_SUMMARY.md](INVESTOR_DILIGENCE_SUMMARY.md): concise diligence-facing summary.
 
-- Archived:
-  - `not_public/archived_docs/*` (generated books, tools, prior chat exports)
+Canonical subsystem and validation docs
 
-Migration & governance plan
----------------------------
+- [LIVESTOCK_MODULE_SPEC.md](LIVESTOCK_MODULE_SPEC.md): dairy-first livestock subsystem scope and assumptions.
+- [LIVESTOCK_HARDWARE_AND_SIMULATION.md](LIVESTOCK_HARDWARE_AND_SIMULATION.md): livestock abstraction and simulation contract.
+- [PILOT_ROADMAP_DAIRY_FIRST.md](PILOT_ROADMAP_DAIRY_FIRST.md): pilot gates, measurement expectations, and stop or redesign conditions for the dairy-first concept.
+- [DAIRY_FIRST_CLAIM_BOUNDARIES.md](DAIRY_FIRST_CLAIM_BOUNDARIES.md): safe outward wording and claim-upgrade rules for the dairy-first subsystem.
+- [DAIRY_FIRST_EXTERNAL_REVIEW_BRIEF.md](DAIRY_FIRST_EXTERNAL_REVIEW_BRIEF.md): external validation and research requirements for dairy-first review.
+- [PLAUSIBILITY_AND_VALIDATION.md](PLAUSIBILITY_AND_VALIDATION.md): validation discipline and plausibility framing.
+- [PROJECT_ASSESSMENT_AND_RECOMMENDATIONS.md](PROJECT_ASSESSMENT_AND_RECOMMENDATIONS.md): assessment context and recommendation history.
+- [IMPLEMENTATION_APPROACH.md](IMPLEMENTATION_APPROACH.md): prototype implementation framing.
 
-1. Short audit: Review each doc and assign one of the status categories above. (This file is the first pass.)
-2. Non-destructive moves: Move generated and redundant artifacts into `not_public/archived_docs/` and replace them with pointer files referencing approved sources (already applied in part).
-3. Add a one-line status header to each markdown file (e.g., `Status: approved`) for quick scanning. Do not change content during this step.
-4. For Action-needed docs, create short TODO sections at the top describing required edits and owners.
-5. Periodic snapshot: regenerate `docs/UNIFIED_DIRECTION_SNAPSHOT.md` after major doc updates using `npm run gen-book` or the Actions workflow.
+Reference docs
 
-Ownership & approvals
----------------------
+- [API_DOCUMENTATION.md](API_DOCUMENTATION.md)
+- [capability_registry.md](capability_registry.md)
+- [urc_interpreter_contract.md](urc_interpreter_contract.md)
+- [URC_spec.md](URC_spec.md)
+- [telemetry_api_openapi.yaml](telemetry_api_openapi.yaml)
+- [telemetry_db_schema.sql](telemetry_db_schema.sql)
+- [FAILURE_RECOVERY.md](FAILURE_RECOVERY.md)
+- [safety.md](safety.md)
+- [GOVERNANCE.md](GOVERNANCE.md)
 
-Each doc should list a single editor/owner at the top (name or team). Approvals for approved promotion require the lead's sign-off (issue or PR comment).
+Working or planning docs
 
-Privacy & provenance
---------------------
+- [Plan_and_tasks_AFS.md](../Plan_and_tasks_AFS.md): active remediation plan.
+- [PUBLICATION_PLAN.md](PUBLICATION_PLAN.md)
+- [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
+- [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md)
+- [external_review_packet/INTERNAL_REVIEW_COORDINATION.md](external_review_packet/INTERNAL_REVIEW_COORDINATION.md): internal operating rules for outbound review and response handling.
+- [external_review_packet/REVIEW_INTAKE_CONSOLIDATION_TEMPLATE.md](external_review_packet/REVIEW_INTAKE_CONSOLIDATION_TEMPLATE.md): normalization template for each incoming report.
+- [external_review_packet/received_reports/2026-03-10_report_01_intake.md](external_review_packet/received_reports/2026-03-10_report_01_intake.md): first received-report intake, classified as supporting context rather than domain validation.
+- [external_review_packet/received_reports/2026-03-10_report_02_intake.md](external_review_packet/received_reports/2026-03-10_report_02_intake.md): structured synthetic multi-discipline critique, useful for internal pressure-testing but not counted as verified external review.
+- [external_review_packet/received_reports/2026-03-10_report_03_intake.md](external_review_packet/received_reports/2026-03-10_report_03_intake.md): updated generic assessment-framework report, kept as process guidance only.
+- [delivery_decision_checklist.md](delivery_decision_checklist.md)
+- [kpi_template.md](kpi_template.md)
+- [monetary_breakeven.md](monetary_breakeven.md)
 
-Sensitive provenance artifacts (chat exports, extension snapshots) should be kept in `not_public/` and not be published externally without redaction and explicit permission.
+Exploratory, historical, or generated artifacts
 
-Planned next steps:
+- [UNIFIED_DIRECTION_SNAPSHOT.md](UNIFIED_DIRECTION_SNAPSHOT.md)
+- [NEW_BEARINGS_BOOK_FULL.md](NEW_BEARINGS_BOOK_FULL.md)
+- [ORIGINAL_CHAT_COMPARISON.md](ORIGINAL_CHAT_COMPARISON.md)
+- [citations.md](citations.md): normalized wrapper around a raw citation-search export; useful for source triage, not a canonical bibliography.
+- [deep-research-report.md](deep-research-report.md): preserved imported research export; use the normalized intake file instead for operational conclusions.
+- [deep-research-report (1).md](deep-research-report%20(1).md): preserved imported research export; use the normalized intake file instead for operational conclusions.
+- [idk.md](idk.md)
+- [Name talk and perhaps a few other useful bits.md](Name%20talk%20and%20perhaps%20a%20few%20other%20useful%20bits.md)
+- generated diagrams and data files such as [architecture.svg](architecture.svg), [architecture.mmd](architecture.mmd), and [kpi_dashboard_mock.json](kpi_dashboard_mock.json)
 
-- Add one-line status headers to the files listed as approved and Draft (non-destructive edit).
-- Finalize `docs/GOVERNANCE.md` with the promotion checklist (Draft → Action-needed → approved).
+Interpretation rules
+
+- If a claim conflicts with [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md), trust the proof-status document.
+- If a scope description conflicts with [README.md](../README.md) and [architecture.md](architecture.md), update the outlying document rather than broadening the claim.
+- Treat historical and exploratory files as context, not current authority.
+
+Next cleanup targets
+
+- Normalize repeated subsystem terminology across README, architecture, and subsystem specs.
+- Add short status headers to remaining high-value docs that do not yet have one.
+- Move or clearly mark documents that are exploratory but currently look canonical at a glance.

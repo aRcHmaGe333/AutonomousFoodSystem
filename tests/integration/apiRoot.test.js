@@ -10,6 +10,7 @@ describe('API smoke: /api', () => {
     expect(res.body).toHaveProperty('endpoints');
     expect(res.body.endpoints).toHaveProperty('recipes');
     expect(res.body.endpoints).toHaveProperty('growing');
+    expect(res.body.endpoints).toHaveProperty('livestock');
   });
 });
 

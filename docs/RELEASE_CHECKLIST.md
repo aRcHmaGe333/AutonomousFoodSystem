@@ -15,9 +15,8 @@ Pre-publish checks
 3. Safety & Compliance
    - docs/safety.md included and concise pilot safety acceptance criteria are present.
    - docs/LEGAL_NOTICE.md included with IP and usage notes.
-4. Contribution & community
-   - docs/CONTRIBUTING.md present with contribution guidelines.
-   - docs/CODE_OF_CONDUCT.md present.
+4. Contribution surface
+   - docs/CONTRIBUTING.md present if external contributions are being invited.
 5. Tests & CI
    - .github/workflows/ci.yml present and runs `npm test`.
    - Unit tests for critical components included (URC interpreter skeleton).

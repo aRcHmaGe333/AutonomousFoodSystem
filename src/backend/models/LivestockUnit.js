@@ -126,6 +126,38 @@ class LivestockUnit {
       }
     };
 
+    this.dairyPipeline = data.dairyPipeline || {
+      rawMilk: {
+        status: 'implemented',
+        storage: 'collection_tank',
+        currentLiters: 0
+      },
+      chilledMilk: {
+        status: 'simulated',
+        storage: 'cooling_buffer',
+        currentLiters: 0,
+        estimatedRecoveryRate: 0.97
+      },
+      creamStream: {
+        status: 'conceptual',
+        storage: 'separator_output',
+        currentLiters: 0,
+        estimatedRecoveryRate: 0.12
+      },
+      skimMilkStream: {
+        status: 'conceptual',
+        storage: 'separator_output',
+        currentLiters: 0,
+        estimatedRecoveryRate: 0.88
+      },
+      culturedBase: {
+        status: 'conceptual',
+        storage: 'fermentation_hold',
+        currentLiters: 0,
+        estimatedRecoveryRate: 0.75
+      }
+    };
+
     // Performance metrics
     this.performance = data.performance || {
       totalMilkYieldLiters: 0,
@@ -180,7 +212,12 @@ class LivestockUnit {
 
     // Integration interfaces
     this.integrations = data.integrations || {
-      growingSystem: { connected: false, lastSync: null },   // digestate → fertilizer
+      growingSystem: {
+        connected: false,
+        lastSync: null,
+        digestateDemandLitersPerDay: 0,
+        lastDigestateDelivery: null
+      },   // digestate → fertilizer
       cookingSystem: { connected: false, lastSync: null },   // dairy → recipes
       distributionSystem: { connected: false, lastSync: null }, // cold-chain
       networkNodes: []                                        // other livestock units
@@ -293,6 +330,7 @@ class LivestockUnit {
     this.milkingSystem.status = 'cleaning';
     this.milkingSystem.dailySessions += 1;
     this.milkingSystem.totalYieldLiters += cycleData.yieldLiters || 0;
+    this.recordDairyOutput(cycleData.yieldLiters || 0);
 
     this.performance.totalMilkYieldLiters += cycleData.yieldLiters || 0;
     if (this.animalPopulation.total > 0) {
@@ -330,6 +368,13 @@ class LivestockUnit {
         timestamp: new Date()
       });
     }
+  }
+
+  recordDairyOutput(yieldLiters) {
+    this.dairyPipeline.rawMilk.currentLiters += yieldLiters;
+    this.dairyPipeline.chilledMilk.currentLiters = Math.round(
+      this.dairyPipeline.rawMilk.currentLiters * this.dairyPipeline.chilledMilk.estimatedRecoveryRate
+    );
   }
 
   // --- Animal Management ---
@@ -472,6 +517,7 @@ class LivestockUnit {
       animalPopulation: this.animalPopulation,
       sensorData: this.sensorData,
       resources: this.resources,
+      dairyPipeline: this.dairyPipeline,
       performance: this.performance,
       wasteManagement: this.wasteManagement,
       maintenance: this.maintenance,

@@ -6,7 +6,7 @@ Thank you for your interest in contributing to the Autonomous Food System projec
 
 - **Review Project Docs:** Please read [docs/OVERVIEW.md](./OVERVIEW.md), [docs/TECH_STACK.md](./TECH_STACK.md), and [docs/STATUS.md](./STATUS.md) for context.
 - **Understand Priorities:** Check [docs/PROJECT_ASSESSMENT_AND_RECOMMENDATIONS.md](./PROJECT_ASSESSMENT_AND_RECOMMENDATIONS.md) and [docs/IMPLEMENTATION_APPROACH.md](./IMPLEMENTATION_APPROACH.md) to align with current goals.
-- **Open Issues:** For major changes or new features, open an issue first to discuss with maintainers.
+- **Coordinate First:** For major changes or external contributions, contact the repository owner first so work does not drift from the active build direction.
 
 ## How to Contribute
 
@@ -24,14 +24,10 @@ Thank you for your interest in contributing to the Autonomous Food System projec
 
 ## Pull Requests
 
-- Fork the repository and use feature branches.
-- Keep PRs focused and well-described. Link related issues.
+- External pull requests should be coordinated in advance with the repository owner.
+- Keep PRs focused and well-described.
 - Include tests for new or changed behavior.
 - Use the project logger (`src/backend/utils/logger.js`) for logging.
-
-## Code of Conduct
-
-- Please review [docs/CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) and adhere to it.
 
 ## Licensing & Intellectual Property
 
@@ -40,4 +36,4 @@ Thank you for your interest in contributing to the Autonomous Food System projec
 
 ---
 
-For questions or help, open an issue or start a discussion. We appreciate your contributions!
+For contribution or licensing questions, contact the repository owner before investing work.
