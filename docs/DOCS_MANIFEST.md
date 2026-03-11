@@ -55,6 +55,9 @@ Working or planning docs
 - [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
 - [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md)
 - [external_review_packet/INTERNAL_REVIEW_COORDINATION.md](external_review_packet/INTERNAL_REVIEW_COORDINATION.md): internal operating rules for outbound review and response handling.
+- [external_review_packet/REVIEWER_TARGET_PIPELINE.md](external_review_packet/REVIEWER_TARGET_PIPELINE.md): internal target qualification and contact-pipeline surface for named reviewer outreach.
+- [external_review_packet/OUTREACH_MESSAGE_TEMPLATES.md](external_review_packet/OUTREACH_MESSAGE_TEMPLATES.md): ready-to-send outreach language for email, DM, follow-up, and call setup.
+- [external_review_packet/REVIEW_SEND_LOG.md](external_review_packet/REVIEW_SEND_LOG.md): running log of outbound requests, follow-ups, and intake normalization status.
 - [external_review_packet/REVIEW_INTAKE_CONSOLIDATION_TEMPLATE.md](external_review_packet/REVIEW_INTAKE_CONSOLIDATION_TEMPLATE.md): normalization template for each incoming report.
 - [external_review_packet/received_reports/2026-03-10_report_01_intake.md](external_review_packet/received_reports/2026-03-10_report_01_intake.md): first received-report intake, classified as supporting context rather than domain validation.
 - [external_review_packet/received_reports/2026-03-10_report_02_intake.md](external_review_packet/received_reports/2026-03-10_report_02_intake.md): structured synthetic multi-discipline critique, useful for internal pressure-testing but not counted as verified external review.

@@ -25,6 +25,14 @@ Send these external-facing files together:
 - QUESTION_SHEET.md
 - REVIEW_RESPONSE_TEMPLATE.md
 
+## Outreach Surfaces
+
+Use these internal files to run the outbound review process:
+
+- REVIEWER_TARGET_PIPELINE.md
+- OUTREACH_MESSAGE_TEMPLATES.md
+- REVIEW_SEND_LOG.md
+
 ## Reviewer Priority Order
 
 1. dairy systems engineer
@@ -44,6 +52,7 @@ Reason for this order:
 - confirm packet language makes no stronger claim than the concept can support
 - confirm terminology is stable across all packet files
 - confirm no file refers the reviewer into internal materials
+- confirm the target actually matches one of the required reviewer disciplines
 - choose the discipline-specific questions to emphasize for the recipient
 - record when the packet was sent and to whom
 - record whether any follow-up material was requested

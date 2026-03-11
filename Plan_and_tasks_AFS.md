@@ -263,6 +263,9 @@ Goal:
 Tasks:
 
 - [x] Prepare a dairy-first expert review brief with the current architecture, operating assumptions, and validation questions.
+- [x] Build an internal reviewer-target pipeline so outreach starts from named, discipline-fit targets instead of generic search.
+- [x] Prepare short outreach message templates for email, DM, follow-up, and call framing.
+- [x] Add a send log so outbound review requests and normalization status stay explicit.
 - [ ] Request review from dairy engineering, veterinary welfare, biosecurity, waste/digestion, and farm economics experts.
 - [ ] Record expert objections and convert them into tracked design changes or explicit risk acceptances.
 - [x] Add quantitative corridor, hoof-indexing, teat-alignment, cradle-pressure, and pinch-point constraints to the dairy review packet.
