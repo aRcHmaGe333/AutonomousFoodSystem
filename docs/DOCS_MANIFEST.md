@@ -51,6 +51,7 @@ Reference docs
 Working or planning docs
 
 - [Plan_and_tasks_AFS.md](../Plan_and_tasks_AFS.md): active remediation plan.
+- [IMPORTED_SOURCE_CONTEXT.md](IMPORTED_SOURCE_CONTEXT.md): reference note on what the imported research materials add to assessment discipline, source context, and claim boundaries.
 - [PUBLICATION_PLAN.md](PUBLICATION_PLAN.md)
 - [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
 - [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md)
