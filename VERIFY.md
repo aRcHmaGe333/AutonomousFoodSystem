@@ -35,18 +35,18 @@ wget https://freetsa.org/files/tsa.crt
 wget https://freetsa.org/files/cacert.pem
 ```
 
-Verify the timestamp token against the tree hash:
+Verify the timestamp token against the tree hash data:
 
 ```bash
+echo -n "[TREE_HASH]" > /tmp/tree_hash.txt
 openssl ts -verify \
   -in .timestamps/[TREE_HASH].tsr \
-  -digest [FULL_TREE_HASH] \
-  -sha512 \
+  -data /tmp/tree_hash.txt \
   -CAfile cacert.pem \
   -untrusted tsa.crt
 ```
 
-If the output says `Verification: OK`, the proof is valid. The tree hash — and therefore every file in the repository — existed at the time stated in the token, as certified by an independent Time Stamping Authority.
+If the output says `Verification: OK`, the proof is valid. The tree hash text file — and therefore the repository state represented by that tree hash — existed at the time stated in the token, as certified by an independent Time Stamping Authority.
 
 ### 3. (Optional) Verify OpenTimestamps Proof
 

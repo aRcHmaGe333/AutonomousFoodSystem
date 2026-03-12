@@ -229,7 +229,7 @@ autonomous-food-system/
 
 ## Intellectual Property & Licensing
 
-This work is published under the **APC-VF License v2.0** (All Rights Reserved — Authorship & Patent Claim with ValueFlow Universal Access). See [LICENSE-APC-VF.md](LICENSE-APC-VF.md).
+This work is published under the **APC-VF License v2.0** (All Rights Reserved — Authorship & Patent Claim with ValueFlow Universal Access). See [LICENSE](LICENSE).
 
 Authorship is cryptographically timestamped via RFC 3161. See [VERIFY.md](VERIFY.md) for independent verification instructions.
 

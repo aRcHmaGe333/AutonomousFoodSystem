@@ -4,7 +4,7 @@ This repository contains research, design documents, and prototype code related 
 
 Ownership & Copyright
 - The content in this repository is the intellectual property of the repository owner unless otherwise specified.
-- No license is explicitly granted with this repository. Use of content requires explicit written permission from the owner.
+- Use of the repository is governed by the APC-VF license in the repository root. Read [../LICENSE](../LICENSE) together with [../VERIFY.md](../VERIFY.md) before relying on any claim about authorship, permitted use, or timestamp proof.
 
 Disclaimer
 - The materials are research and prototype artifacts. They are not production-ready and should not be used in live systems without rigorous engineering, testing, and regulatory compliance.
