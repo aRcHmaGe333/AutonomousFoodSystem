@@ -277,6 +277,12 @@ Tasks:
 - [x] Add a claim-boundary guide so outward wording stays inside the current proof surface.
 - [ ] Add an external-validation section to the public proof-status document once reviews exist.
 
+Progress note as of 2026-03-11:
+
+- named first-wave reviewer targets are now populated in [docs/external_review_packet/REVIEWER_TARGET_PIPELINE.md](docs/external_review_packet/REVIEWER_TARGET_PIPELINE.md)
+- the packet and message templates are ready
+- the remaining irreducible step is real outbound contact and response capture
+
 Completion standard:
 
 - Livestock claims that remain in public docs have either internal prototype support or named external validation intent.
