@@ -58,7 +58,7 @@ Working or planning docs
 - [PUBLICATION_PLAN.md](PUBLICATION_PLAN.md)
 - [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
 - [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md)
-- [external_review_packet/](external_review_packet): mixed review-packet materials. Some files are outward review materials, while others are internal operating surfaces and should not be treated as part of the main public reading path.
+- [external_review_packet/README.md](external_review_packet/README.md): packet index that separates outward review materials from internal operating files in the public folder.
 - [delivery_decision_checklist.md](delivery_decision_checklist.md)
 - [kpi_template.md](kpi_template.md)
 - [monetary_breakeven.md](monetary_breakeven.md)

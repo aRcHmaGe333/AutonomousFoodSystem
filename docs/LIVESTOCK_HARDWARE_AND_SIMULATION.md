@@ -1,6 +1,6 @@
 # Livestock Hardware And Simulation
 
-Status: Draft
+Status: Working subsystem-contract document
 
 Purpose
 

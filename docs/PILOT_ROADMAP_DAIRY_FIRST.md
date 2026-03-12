@@ -1,6 +1,6 @@
 # Dairy-First Pilot Roadmap
 
-Status: Draft
+Status: Pilot-planning document
 
 Purpose
 

@@ -1,6 +1,6 @@
 # Dairy-First External Research Requirements
 
-Status: Draft
+Status: External validation requirements document
 
 ## Purpose
 

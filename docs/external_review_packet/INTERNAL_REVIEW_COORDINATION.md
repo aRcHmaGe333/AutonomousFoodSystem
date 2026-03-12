@@ -1,5 +1,10 @@
 # Internal Review Coordination
 
+Folder visibility rule
+
+- This folder is public for auditability, but not every file in it is part of the outward reviewer packet.
+- Send only the outward packet files listed in `README.md` in this folder unless a reviewer explicitly asks for more.
+
 ## Purpose
 
 This document is for internal coordination of the external dairy-first review process.

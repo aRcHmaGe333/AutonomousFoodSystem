@@ -1,4 +1,4 @@
-Status: Draft
+Status: Working checklist
 
 # Delivery decision checklist — quick, plain guide
 
