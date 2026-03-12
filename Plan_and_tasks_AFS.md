@@ -1,5 +1,11 @@
 # Plan and Tasks — Autonomous Food System
 
+Working-surface note:
+
+- This file is the active remediation plan.
+- It is not the primary public entry point for understanding current proof status.
+- Use [docs/CURRENT_PROOF_STATUS.md](docs/CURRENT_PROOF_STATUS.md), [docs/architecture.md](docs/architecture.md), and [README.md](README.md) first.
+
 ## Purpose
 
 This document turns the current design assessment into a correction plan.

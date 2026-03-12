@@ -1,6 +1,6 @@
 # Docs Manifest
 
-Status: Draft
+Document map for the current public-facing and supporting docs.
 
 Purpose
 
@@ -12,7 +12,7 @@ Read in this order
 1. [README.md](../README.md)
 2. [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md)
 3. [architecture.md](architecture.md)
-4. [STATUS.md](STATUS.md)
+4. [README_PUBLIC.md](README_PUBLIC.md)
 5. [LIVESTOCK_MODULE_SPEC.md](LIVESTOCK_MODULE_SPEC.md)
 6. [LIVESTOCK_HARDWARE_AND_SIMULATION.md](LIVESTOCK_HARDWARE_AND_SIMULATION.md)
 
@@ -21,9 +21,12 @@ Canonical external-facing docs
 - [README.md](../README.md): primary repository entry point.
 - [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md): source of truth for implemented, simulated, conceptual, and externally validated boundaries.
 - [architecture.md](architecture.md): system map and subsystem boundary view.
-- [STATUS.md](STATUS.md): concise current-state summary.
 - [README_PUBLIC.md](README_PUBLIC.md): short public-facing orientation page.
 - [INVESTOR_DILIGENCE_SUMMARY.md](INVESTOR_DILIGENCE_SUMMARY.md): concise diligence-facing summary.
+
+Companion summary docs
+
+- [STATUS.md](STATUS.md): concise companion summary, subordinate to [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md).
 
 Canonical subsystem and validation docs
 
@@ -55,14 +58,7 @@ Working or planning docs
 - [PUBLICATION_PLAN.md](PUBLICATION_PLAN.md)
 - [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md)
 - [REVIEW_SUMMARY.md](REVIEW_SUMMARY.md)
-- [external_review_packet/INTERNAL_REVIEW_COORDINATION.md](external_review_packet/INTERNAL_REVIEW_COORDINATION.md): internal operating rules for outbound review and response handling.
-- [external_review_packet/REVIEWER_TARGET_PIPELINE.md](external_review_packet/REVIEWER_TARGET_PIPELINE.md): internal target qualification and contact-pipeline surface for named reviewer outreach.
-- [external_review_packet/OUTREACH_MESSAGE_TEMPLATES.md](external_review_packet/OUTREACH_MESSAGE_TEMPLATES.md): ready-to-send outreach language for email, DM, follow-up, and call setup.
-- [external_review_packet/REVIEW_SEND_LOG.md](external_review_packet/REVIEW_SEND_LOG.md): running log of outbound requests, follow-ups, and intake normalization status.
-- [external_review_packet/REVIEW_INTAKE_CONSOLIDATION_TEMPLATE.md](external_review_packet/REVIEW_INTAKE_CONSOLIDATION_TEMPLATE.md): normalization template for each incoming report.
-- [external_review_packet/received_reports/2026-03-10_report_01_intake.md](external_review_packet/received_reports/2026-03-10_report_01_intake.md): first received-report intake, classified as supporting context rather than domain validation.
-- [external_review_packet/received_reports/2026-03-10_report_02_intake.md](external_review_packet/received_reports/2026-03-10_report_02_intake.md): structured synthetic multi-discipline critique, useful for internal pressure-testing but not counted as verified external review.
-- [external_review_packet/received_reports/2026-03-10_report_03_intake.md](external_review_packet/received_reports/2026-03-10_report_03_intake.md): updated generic assessment-framework report, kept as process guidance only.
+- [external_review_packet/](external_review_packet): mixed review-packet materials. Some files are outward review materials, while others are internal operating surfaces and should not be treated as part of the main public reading path.
 - [delivery_decision_checklist.md](delivery_decision_checklist.md)
 - [kpi_template.md](kpi_template.md)
 - [monetary_breakeven.md](monetary_breakeven.md)
@@ -83,6 +79,7 @@ Interpretation rules
 
 - If a claim conflicts with [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md), trust the proof-status document.
 - If a scope description conflicts with [README.md](../README.md) and [architecture.md](architecture.md), update the outlying document rather than broadening the claim.
+- Do not treat planning docs or internal review-packet operating files as co-equal with the canonical public-facing surfaces.
 - Treat historical and exploratory files as context, not current authority.
 
 Next cleanup targets

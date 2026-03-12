@@ -34,7 +34,7 @@ To develop a realistic, data-grounded concept of self-maintaining machine system
 ## Core System Components
 
 ### 1. **Autonomous Resource Maintenance Engine (ARME)**
-- **Goal:** Maintain 100% functional uptime through self-repair, redundancy, and modularity
+- **Goal:** Long-term design direction toward 100% functional uptime through self-repair, redundancy, and modularity
 - **Scope:** Global distributed network of local production nodes
 - **Approach:** Non-dependent on human input after deployment, except for upgrades
 
@@ -147,7 +147,7 @@ autonomous-food-system/
 |   +-- services/          # Business logic (optimization, livestock analytics)
 |   +-- middleware/        # Validation, rate limiting, errors
 |   `-- utils/             # Logging, helpers
-+-- autonomous_food_system/ # Python modules (self-healing, monitoring)
++-- autonomous_food_system/ # Supporting Python modules for self-healing and monitoring experiments
 +-- tests/                 # Test suite
 +-- docs/                  # Technical documentation
 `-- README_DEVELOPMENT.md  # Detailed development guide
@@ -189,8 +189,8 @@ autonomous-food-system/
 
 ## Economic & Social Impact
 
-### Benefits
-- **Food Security:** Guaranteed optimal nutrition for all populations
+### Benefits And Long-Term Direction
+- **Food Security:** Design goal of guaranteed optimal nutrition for all populations, subject to staged validation beyond the current software prototype
 - **Environmental:** Dramatic reduction in agricultural environmental impact
 - **Economic:** Freed human labor for creative and intellectual pursuits
 - **Health:** Precise nutritional optimization for individual needs

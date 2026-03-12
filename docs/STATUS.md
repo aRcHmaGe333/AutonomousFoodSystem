@@ -1,5 +1,10 @@
 # Status
 
+Authority note:
+
+- [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md) is the authoritative proof-surface document.
+- This file is only a concise companion summary.
+
 ## Current reading
 
 This repo is a software-first prototype with real subsystem surfaces and staged physical validation.
