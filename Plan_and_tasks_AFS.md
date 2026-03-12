@@ -2,9 +2,10 @@
 
 Working-surface note:
 
-- This file is the active remediation plan.
+- This file is the active remediation plan and partial remediation record.
 - It is not the primary public entry point for understanding current proof status.
 - Use [docs/CURRENT_PROOF_STATUS.md](docs/CURRENT_PROOF_STATUS.md), [docs/architecture.md](docs/architecture.md), and [README.md](README.md) first.
+- Some sections below preserve earlier required-correction framing even where the corresponding repo fix has already been applied.
 
 ## Purpose
 

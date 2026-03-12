@@ -30,6 +30,15 @@ What does not yet exist at equal maturity:
 - investor-grade operational proof
 - parity with growing in hardware abstraction formalization
 
+## Proof-Surface Summary
+
+- Implemented: livestock data model, dairy-oriented routes and services, analytics, tracking, and documented subsystem assumptions.
+- Simulated: livestock abstraction behavior, corridor throughput, sanitation-state progression, quarantine occupancy, and dairy-pipeline placeholder stages at the software-prototype level.
+- Conceptual: physical corridor hardware, passive-cradle milking hardware, real sanitation hardware stack, and broader non-dairy livestock workflows.
+- Requires external validation: welfare outcomes, sanitation sufficiency, biosecurity viability, waste-loop performance, and operations economics.
+
+Use [CURRENT_PROOF_STATUS.md](CURRENT_PROOF_STATUS.md) as the authoritative cross-repo proof surface if any shorter wording here is interpreted too broadly.
+
 ## Core Concepts
 
 ### 1. Passive-Cradle Milking System

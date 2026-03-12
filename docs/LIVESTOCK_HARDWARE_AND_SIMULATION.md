@@ -53,6 +53,22 @@ What is implemented versus simulated versus conceptual
   - cultured-base downstream processing
   - real hardware drivers for corridor, wash, and cradle control
 
+Biosecurity and sanitation validation status
+
+- Implemented at the software-prototype level:
+  - sanitation state transitions
+  - quarantine occupancy tracking
+  - entry sanitation pass-rate tracking
+- Simulated:
+  - how those states and counters move through the livestock subsystem contract
+- Not yet physically validated:
+  - contamination-control effectiveness
+  - pathogen-reduction performance
+  - clean-zone versus biological-zone separation under repeated real operation
+  - verification instrumentation sufficiency for a real pilot
+
+This means the current biosecurity and sanitation surface is useful for software contract definition and pilot planning, but it does not yet justify real-world efficacy claims.
+
 Why this matters
 
 - Before this layer existed, the repo had livestock concept coverage and livestock business objects, but not a clear prototype-parallel path.

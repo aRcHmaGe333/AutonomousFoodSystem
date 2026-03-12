@@ -6,7 +6,7 @@ _All rights reserved_
 
 ## Overview
 
-This repository contains a working prototype and conceptual framework for an autonomous food production system.
+This repository contains a software-first prototype and conceptual framework for an autonomous food production system.
 
 Current scope in this repo:
 
@@ -36,7 +36,7 @@ To develop a realistic, data-grounded concept of self-maintaining machine system
 ### 1. **Autonomous Resource Maintenance Engine (ARME)**
 - **Goal:** Long-term design direction toward 100% functional uptime through self-repair, redundancy, and modularity
 - **Scope:** Global distributed network of local production nodes
-- **Approach:** Non-dependent on human input after deployment, except for upgrades
+- **Approach:** Long-term operating direction is to reduce routine human dependence after deployment, with upgrades, oversight, and staged validation still part of the path
 
 ### 2. **Growing Modules (AgroBotGrid)**
 - **Technology:** Vertical farms using aeroponics/hydroponics
@@ -64,7 +64,7 @@ Distribution lives in **[PrecisionDelivery](https://github.com/aRcHmaGe333/Preci
 
 ## Technical Implementation
 
-### Current Status: Working Prototype
+### Current Status: Software-First Prototype
 This repository includes a software-first prototype implementation of recipe management, cooking coordination, growing APIs, and dairy-first livestock management.
 
 Important notes:
