@@ -1,7 +1,7 @@
 
 # Autonomous Food System
 
-**Self-maintaining food production infrastructure — growing modules, cooking and portioning, dairy-first livestock, and shared resource loops.**
+**Self-maintaining food production infrastructure — growing modules, cooking and portioning, livestock management, and shared resource loops.**
 _All rights reserved_
 
 ## Overview
@@ -12,24 +12,23 @@ Current scope in this repo:
 
 - growing
 - cooking and portioning
-- dairy-first livestock management
+- livestock management
 - closed-loop waste and resource integration
 
-This is a software-first prototype. It is meant to make the system inspectable, testable, and progressively verifiable.
+This is a prototype. It is meant to make the system inspectable, testable, and progressively verifiable.
 
-Distribution is a separate project: **[PrecisionDelivery](https://github.com/aRcHmaGe333/PrecisionDelivery)**.
-
-**Aspirational Goals:** Claims such as "100% functional uptime" and "zero waste" are long-term targets, not current capabilities. The present implementation is a software prototype with simulation-first hardware integration.
+**Aspirational Goals:** "100% functional uptime" and "zero waste" are long-term targets, not current capabilities. The present implementation is a software prototype with simulation-first hardware integration.
 
 **Plausibility & Evidence:** [docs/PLAUSIBILITY_AND_VALIDATION.md](./docs/PLAUSIBILITY_AND_VALIDATION.md)
 **Architecture:** [docs/architecture.md](./docs/architecture.md)
 **Current Proof Status:** [docs/CURRENT_PROOF_STATUS.md](./docs/CURRENT_PROOF_STATUS.md)
 **Dairy Pilot Roadmap:** [docs/PILOT_ROADMAP_DAIRY_FIRST.md](./docs/PILOT_ROADMAP_DAIRY_FIRST.md)
 **Dairy Claim Boundaries:** [docs/DAIRY_FIRST_CLAIM_BOUNDARIES.md](./docs/DAIRY_FIRST_CLAIM_BOUNDARIES.md)
+**Current Priorities & Roadmap:** [steer.md](steer.md)
 
 ## Vision Statement
 
-To develop a realistic, data-grounded concept of self-maintaining machine systems that fulfill humanity's basic and optimal needs for food production and processing — delivering not bare minimums, but whatever is considered the norm and relative-optimum for human nutrition and satisfaction.
+To develop a realistic, data-grounded concept of self-maintaining machine systems that fulfill humanity's basic and optimal needs for food production and processing — delivering not bare minimums, but whatever is considered the norm and relative-optimum for human nutrition based on current consumption.
 
 ## Core System Components
 
@@ -60,16 +59,17 @@ To develop a realistic, data-grounded concept of self-maintaining machine system
 - **Specification:** [docs/LIVESTOCK_MODULE_SPEC.md](./docs/LIVESTOCK_MODULE_SPEC.md)
 
 ### 5. **Distribution** *(separate project)*
-Distribution lives in **[PrecisionDelivery](https://github.com/aRcHmaGe333/PrecisionDelivery)**. The two projects connect at the delivery interface — once food is produced here, it enters PrecisionDelivery's network.
+Distribution **[AllDone](https://github.com/aRcHmaGe333/AllDone)**. The two projects connect at the delivery interface — once food is produced here, it enters the AllDone network. 
 
 ## Technical Implementation
 
 ### Current Status: Software-First Prototype
-This repository includes a software-first prototype implementation of recipe management, cooking coordination, growing APIs, and dairy-first livestock management.
+This repository includes a software-first prototype implementation of recipe management, cooking coordination, growing APIs, and dairy-first livestock management. Backing (team of experts, funding) needed for physical prototyping.
 
 Important notes:
 - Hardware integration is simulation-first; physical sensor/actuator/robot drivers are not implemented yet.
-- Claims like "100% uptime" and "zero waste" are aspirational targets and require real-world validation.
+- Possibility of extensive Digital-Twin prototype support.
+- Statements within the project documentation of a "100% uptime" and "zero waste" are aspirational targets and require real-world validation.
 - Livestock software maturity is ahead of livestock physical validation maturity.
 
 **Plausibility & evidence:** `docs/PLAUSIBILITY_AND_VALIDATION.md`
@@ -243,7 +243,7 @@ Every contribution funds continued research, prototype development, and keeping 
 
 ## Contact
 
-For inquiries about collaboration, licensing, or implementation partnerships, contact the repository owner via [GitHub profile](https://github.com/aRcHmaGe333).
+For inquiries about collaboration, licensing, or implementation partnerships, contact the repository owner via [GitHub profile](https://github.com/aRcHmaGe333) and stojnicslavko@gmail.com
 
 ---
 
