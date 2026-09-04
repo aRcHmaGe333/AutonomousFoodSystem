@@ -1,250 +1,128 @@
-
 # Autonomous Food System
 
-**Self-maintaining food production infrastructure — growing modules, cooking and portioning, livestock management, and shared resource loops.**
-_All rights reserved_
+I want food production to need dramatically less routine human babysitting.
 
-## Overview
+Not "AI suggests when to water basil." I mean the whole ugly chain: growing, monitoring, harvesting, preparing, portioning, handling waste/byproducts, and keeping the machinery itself running as much as possible.
 
-This repository contains a software-first prototype and conceptual framework for an autonomous food production system.
+That is the direction of AFS.
 
-Current scope in this repo:
+The current repo is a **software-first prototype**. The physical system is not built yet, and I am keeping that distinction explicit because pretending otherwise helps nobody.
+
+## What this is trying to become
+
+A distributed food-production system with local modules for:
 
 - growing
 - cooking and portioning
-- livestock management
-- closed-loop waste and resource integration
+- dairy-first livestock management
+- shared resource loops
+- monitoring, analytics and increasingly autonomous operation
 
-This is a prototype. It is meant to make the system inspectable, testable, and progressively verifiable.
+Food produced here can hand off into [AllDone](https://github.com/aRcHmaGe333/AllDone) for distribution.
 
-**Aspirational Goals:** "100% functional uptime" and "zero waste" are long-term targets, not current capabilities. The present implementation is a software prototype with simulation-first hardware integration.
+The long-term target is not survival-food minimalism. The point is to produce normal, good food with as little repeated human work and avoidable waste as possible.
 
-**Plausibility & Evidence:** [docs/PLAUSIBILITY_AND_VALIDATION.md](./docs/PLAUSIBILITY_AND_VALIDATION.md)
-**Architecture:** [docs/architecture.md](./docs/architecture.md)
-**Current Proof Status:** [docs/CURRENT_PROOF_STATUS.md](./docs/CURRENT_PROOF_STATUS.md)
-**Dairy Pilot Roadmap:** [docs/PILOT_ROADMAP_DAIRY_FIRST.md](./docs/PILOT_ROADMAP_DAIRY_FIRST.md)
-**Dairy Claim Boundaries:** [docs/DAIRY_FIRST_CLAIM_BOUNDARIES.md](./docs/DAIRY_FIRST_CLAIM_BOUNDARIES.md)
-**Current Priorities & Roadmap:** [steer.md](steer.md)
+## What actually exists right now
 
-## Vision Statement
+The software side is real.
 
-To develop a realistic, data-grounded concept of self-maintaining machine systems that fulfill humanity's basic and optimal needs for food production and processing — delivering not bare minimums, but whatever is considered the norm and relative-optimum for human nutrition based on current consumption.
+The repo already includes working backend surfaces for:
 
-## Core System Components
+- recipe and ingredient management
+- cooking-session coordination
+- growing-module models/routes
+- dairy-first livestock management
+- animal-health / milking analytics
+- telemetry and performance monitoring
+- simulation-first sensor/hardware paths
+- tests and smoke checks
 
-### 1. **Autonomous Resource Maintenance Engine (ARME)**
-- **Goal:** Long-term design direction toward 100% functional uptime through self-repair, redundancy, and modularity
-- **Scope:** Global distributed network of local production nodes
-- **Approach:** Long-term operating direction is to reduce routine human dependence after deployment, with upgrades, oversight, and staged validation still part of the path
+The physical side is at a very different maturity level.
 
-### 2. **Growing Modules (AgroBotGrid)**
-- **Technology:** Vertical farms using aeroponics/hydroponics
-- **Automation:** Robotic planting, maintenance, and harvesting
-- **Optimization:** Optimized for nutrition and yield
-- **Sustainability direction:** Waste-to-compost-to-nutrient loop with measurable recovery goals rather than absolute claims
+There are no finished robotic farms hiding behind the README. Hardware integration is still simulation-first. Physical safety, animal welfare, biosecurity, economics and real closed-loop performance all need domain experts and real-world validation.
 
-### 3. **Precision Culinary Automation**
-- **Recipe Management:** Machine-readable recipe encoding and optimization
-- **Cooking Coordination:** Real-time process management with sensor integration
-- **Quality Control:** Automated texture, temperature, and nutritional monitoring
-- **Waste Elimination:** Precise portioning and consumption tracking
+Current stage: **software-first prototype; physical validation required**.
 
-### 4. **Dairy-First Livestock Module**
-- **Current framing:** Dairy-first livestock module, not a fully generalized livestock platform.
-- **Passive-Cradle Milking:** The present concept centers on geometric positioning and simpler sensing instead of robotic-arm complexity.
-- **Animal Welfare as Engineering:** The design goal is low-stress, cooperation-oriented handling rather than coercive throughput.
-- **Zone Separation:** Electronics remain in a clean zone while animals and waste remain in a biological zone.
-- **Iterative Automation:** Failures are meant to feed back into design improvements across the network.
-- **Shared Resource Loops:** Digestate and waste handling are designed to feed resource loops back into the growing modules.
-- **Specification:** [docs/LIVESTOCK_MODULE_SPEC.md](./docs/LIVESTOCK_MODULE_SPEC.md)
+The proof split is documented here: [CURRENT_PROOF_STATUS.md](docs/CURRENT_PROOF_STATUS.md).
 
-### 5. **Distribution** *(separate project)*
-Distribution **[AllDone](https://github.com/aRcHmaGe333/AllDone)**. The two projects connect at the delivery interface — once food is produced here, it enters the AllDone network. 
+## Why this belongs in a sustainability discussion
 
-## Technical Implementation
+Because agriculture and food processing waste absurd amounts of inputs when systems are fragmented, badly timed or manually operated by default.
 
-### Current Status: Software-First Prototype
-This repository includes a software-first prototype implementation of recipe management, cooking coordination, growing APIs, and dairy-first livestock management. Backing (team of experts, funding) needed for physical prototyping.
+AFS is trying to make the resource loops tighter:
 
-Important notes:
-- Hardware integration is simulation-first; physical sensor/actuator/robot drivers are not implemented yet.
-- Possibility of extensive Digital-Twin prototype support.
-- Statements within the project documentation of a "100% uptime" and "zero waste" are aspirational targets and require real-world validation.
-- Livestock software maturity is ahead of livestock physical validation maturity.
+- grow locally where that makes sense
+- use water and nutrients more precisely
+- portion food according to actual need
+- reduce spoilage and overproduction
+- turn useful byproducts back into inputs where possible
+- automate repetitive work that currently requires people, transport and constant intervention
 
-**Plausibility & evidence:** `docs/PLAUSIBILITY_AND_VALIDATION.md`
-**Current proof surface:** `docs/CURRENT_PROOF_STATUS.md`
+"Zero waste" and "100% uptime" are long-term directions, not current claims.
 
-For the current livestock validation gate, see `docs/PILOT_ROADMAP_DAIRY_FIRST.md` and `docs/DAIRY_FIRST_CLAIM_BOUNDARIES.md`.
+The useful question is how far toward those targets a real system can move once we stop designing every step as a separate human-operated island.
 
-- **Backend API:** Node.js/Express server with comprehensive recipe management
-- **Recipe Intelligence:** Automation assessment and optimization algorithms  
-- **Cooking Sessions:** Real-time cooking process coordination
-- **Growing and Livestock Services:** Parallel backend subsystem surfaces with different physical validation maturity
-- **Analytics Engine:** Usage tracking and performance optimization
-- **Sensor Framework:** Simulation-first path toward hardware integration
+## Dairy-first, because the implementation has to mean something
 
-### Key Features Implemented
-- [x] Recipe creation, management, and optimization
-- [x] Ingredient database with nutritional analysis
-- [x] Cooking session coordination and tracking
-- [x] Automation potential assessment
-- [x] Analytics and performance monitoring
-- [x] Dairy-first livestock unit management with passive-cradle milking concept
-- [x] Animal health tracking, milking optimization, and iterative fix logging
-- [x] API rate limiting and validation
-- [x] Unit + smoke tests
+The livestock side is currently dairy-first.
 
-### Architecture Highlights
-- **Modular Design:** Each component independently testable and replaceable
-- **API-First:** RESTful design for easy integration and scaling
-- **Real-time Processing:** Live cooking coordination with sensor data
-- **Machine Learning Ready:** Framework for AI optimization algorithms
-- **Truth-Surfaced:** The project distinguishes implemented, simulated, conceptual, and externally validated claims
-- **Terminology-Stable:** Core docs use the same subsystem names for growing modules, cooking and portioning, dairy-first livestock, and shared resource loops
-- **Prototype Ready:** Baseline security middleware, logging, and error handling (not a hardened deployment)
+That is not branding. It is simply where the actual software and design work is concentrated: milking, milk quality, lactation, herd health, sanitation states and the current passive-cradle milking concept.
 
-## Development Setup
+The physical concept deliberately tries to avoid unnecessarily complicated robotic manipulation where simpler geometry/sensing can do the job. Animal welfare has to be treated as an engineering constraint, not an inspirational paragraph.
 
-### Prerequisites
-- Node.js 16+
-- npm 8+
+Useful documents:
 
-### Quick Start
+- [Livestock module spec](docs/LIVESTOCK_MODULE_SPEC.md)
+- [Dairy pilot roadmap](docs/PILOT_ROADMAP_DAIRY_FIRST.md)
+- [Dairy claim boundaries](docs/DAIRY_FIRST_CLAIM_BOUNDARIES.md)
+- [Plausibility and validation](docs/PLAUSIBILITY_AND_VALIDATION.md)
+
+## What needs to happen next
+
+The next useful work is physical validation in small pieces, not "build autonomous agriculture globally."
+
+That means:
+
+1. connect one bounded subsystem to real sensors/actuators
+2. test failure handling and safety properly
+3. bring in the domain people the repo cannot substitute for
+4. measure resource use, reliability, welfare/safety and operating cost
+5. keep expanding only where the previous piece survives reality
+
+The repo already has software structure to support that progression. What it needs now is backing, hardware access and serious domain review.
+
+## Run the prototype
+
+Requirements: Node.js 16+, npm 8+
+
 ```bash
-# Navigate to the repo
-cd AutonomousFoodSystem
-
-# Install dependencies
 npm install
-
-# Copy environment configuration
 cp .env.example .env
-
-# Optional: disable auto-seeded sample data
-# (keeps logs quiet and starts with empty in-memory stores)
-# ENABLE_SAMPLE_DATA=false
-
-# Start development server
 npm run dev
-
-# Run tests
 npm test
-
-# Quick sanity-check (no server required)
 npm run smoke
-
-# View API documentation
-curl http://localhost:3000/api
 ```
 
-### Project Structure
-```
-autonomous-food-system/
-+-- src/backend/           # Node.js/Express server
-|   +-- models/            # Data models (Recipe, GrowingModule, LivestockUnit, etc.)
-|   +-- routes/            # API endpoints (recipes, growing, livestock, cooking, etc.)
-|   +-- services/          # Business logic (optimization, livestock analytics)
-|   +-- middleware/        # Validation, rate limiting, errors
-|   `-- utils/             # Logging, helpers
-+-- autonomous_food_system/ # Supporting Python modules for self-healing and monitoring experiments
-+-- tests/                 # Test suite
-+-- docs/                  # Technical documentation
-`-- README_DEVELOPMENT.md  # Detailed development guide
-```
+## Useful starting points
 
-## Conceptual Framework
+- [Architecture](docs/architecture.md)
+- [Current proof status](docs/CURRENT_PROOF_STATUS.md)
+- [Plausibility and validation](docs/PLAUSIBILITY_AND_VALIDATION.md)
+- [Current priorities](steer.md)
 
-### Global Deployment Structure
-- **Local Nodes ("Pods"):** Self-sustaining units for 100-500 people
-- **Regional Networks:** Interconnected pods sharing resources and data
-- **Global Coordination:** AI-driven optimization across all nodes
-- **Scalability:** Organic growth through modular expansion
+## Funding / collaboration
 
-### Sustainability Principles
-- **Waste Reduction Direction:** Nutrient cycling and byproduct utilization are core design goals, but physical closed-loop performance still requires validation
-- **Local Production:** Minimize transportation and environmental impact
-- **Resource Efficiency:** Optimal water, energy, and material usage
-- **Regenerative Systems:** Self-improving through continuous learning
+If you work in controlled-environment agriculture, food automation, dairy engineering, veterinary welfare, biosecurity, robotics, waste/resource systems, food safety, farm economics or physical prototyping, there is useful work here that software alone cannot finish.
 
-### Human-Centric Design
-- **Optimal Standards:** Not bare minimum, but relative-optimum nutrition
-- **Cultural Sensitivity:** Adaptation to local dietary preferences
-- **Freedom of Choice:** Multiple options while maintaining efficiency
-- **Transparency:** Open algorithms and auditable decision-making
+Likewise, if you fund systems that need real-world validation instead of another pitch deck, I am interested.
 
-## Research & Development Areas
+## IP / verification
 
-### Immediate Focus
-1. **Hardware Integration:** Connect prototype to actual sensors and actuators
-2. **Machine Learning:** Implement optimization and learning algorithms
-3. **User Interface:** Develop intuitive control and monitoring systems
-4. **Safety Systems:** Comprehensive fail-safes and emergency procedures
+Published under the **APC-VF License v2.0**. Authorship is cryptographically timestamped.
 
-### Advanced Research
-1. **Biotechnology Integration:** Cellular agriculture and precision fermentation
-2. **Robotics Advancement:** More sophisticated manipulation and mobility
-3. **AI Optimization:** Multi-objective optimization across nutrition, cost, sustainability
-4. **Social Integration:** Community acceptance and cultural adaptation
+- [LICENSE](LICENSE)
+- [VERIFY.md](VERIFY.md)
 
-## Economic & Social Impact
+Contact: stojnicslavko@gmail.com
 
-### Benefits And Long-Term Direction
-- **Food Security:** Design goal of guaranteed optimal nutrition for all populations, subject to staged validation beyond the current software prototype
-- **Environmental:** Dramatic reduction in agricultural environmental impact
-- **Economic:** Freed human labor for creative and intellectual pursuits
-- **Health:** Precise nutritional optimization for individual needs
-
-### Challenges Addressed
-- **Climate Change:** Resilient food production independent of weather
-- **Population Growth:** Scalable systems that grow with demand
-- **Resource Scarcity:** Efficient use of water, energy, and materials
-- **Access Inequality:** Local production removes dependence on global supply chains
-
-## Implementation Roadmap
-
-### Phase 1: Prototype Enhancement (Months 1-6)
-- Database integration and persistence
-- Frontend web interface development
-- Hardware simulation environment
-- Expanded test coverage
-
-### Phase 2: Hardware Integration (Months 6-18)
-- Sensor and actuator connectivity
-- Real-world testing environments
-- Safety system implementation
-- Quality control automation
-
-### Phase 3: AI/ML Integration (Months 12-24)
-- Machine learning model development
-- Predictive optimization algorithms
-- Computer vision for quality assessment
-- Adaptive learning systems
-
-### Phase 4: Pilot Deployment (Months 18-36)
-- Small-scale community pilots
-- Performance validation
-- Social acceptance studies
-- Economic viability analysis
-
-## Intellectual Property & Licensing
-
-This work is published under the **APC-VF License v2.0** (All Rights Reserved — Authorship & Patent Claim with ValueFlow Universal Access). See [LICENSE](LICENSE).
-
-Authorship is cryptographically timestamped via RFC 3161. See [VERIFY.md](VERIFY.md) for independent verification instructions.
-
-## Support This Work
-
-If this project resonates with you — if you think food infrastructure should be autonomous, humane, and publicly proven — you can support its development directly.
-
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20this%20work-ff5e5b?logo=ko-fi&logoColor=white)](https://ko-fi.com/earthcraft)
-
-Every contribution funds continued research, prototype development, and keeping this work open and timestamped for anyone to verify and build on.
-
-## Contact
-
-For inquiries about collaboration, licensing, or implementation partnerships, contact the repository owner via [GitHub profile](https://github.com/aRcHmaGe333) and stojnicslavko@gmail.com
-
----
-
-**Vision:** A world where optimal nutrition is guaranteed for all humanity through intelligent, sustainable, and autonomous food systems that free human potential for higher pursuits while respecting cultural diversity and individual choice.
+[Support the work](https://ko-fi.com/earthcraft)
